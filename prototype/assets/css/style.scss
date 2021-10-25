@@ -3,6 +3,7 @@
 $blur: 35px;
 $shadow-opacity: 0.30;
 $image: 'https://ensomniacs.github.io/it-topaz/prototype/assets/img/emissary.jpeg';
+$h1color: #8EA9AB;
 
 body, html {
   height: 100%;
@@ -26,19 +27,17 @@ body {
   box-sizing: border-box;
 }
 
-.blur {
-  height: 100%;
-  width: 100%;
-   background-image: url($image);
-  background-size: cover;
-  background-position: center;
-  clip-path: inset(10em);
-  filter: blur($blur);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+h1{
+color: $h1color;
+font-weight: 500;
+font-size: 1.6em;
+text-transform: uppercase;
+letter-spacing: 0.3em;
+text-align: center;
+padding-left: 0.375em;
 }
 
+/*Dust is content*/
 .dust {
   height: 100%;
   width: 100%;
@@ -59,22 +58,49 @@ body {
      z-index: 2;
    //  filter: blur(1px);
   }
+
+  /*blur in content*/
+.blur {
+    height: 100%;
+    width: 100%;
+     background-image: url($image);
+    background-size: cover;
+    background-position: center;
+    clip-path: inset(10em);
+    filter: blur($blur);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   > span.lft {
     position: absolute;
     left: 10%;
-    top: 25%;
+    top: 18%;
     z-index: 5;
     color: white;
-    font-size: 1.2em;
+    font-size: 1em;
     padding-left: 0.375em;
     overflow: auto;
-    width: 45%;
-    height: 45%;
+    width: 30%;
+    height: 30%;
+  }
+  > span.Emissary {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    z-index: 5;
+    color: white;
+    font-size: 1em;
+    padding-left: 0.375em;
+    overflow: auto;
+    width: 30%;
+    height: 40%;
   }
   > span {
     position: absolute;
     right: 10%;
-    top: 25%;
+    top: 30%;
     z-index: 5;
     color: white;
     font-size: 1.1em;
@@ -84,24 +110,65 @@ body {
     width: 45%;
     height: 45%;
   }
- > span h4 {
-     font-weight: 300;
- }
-
-  > span.h2 {
+  > span.h1 {
     position: absolute;
     right: 10%;
     top: 20%;
     z-index: 5;
+    color: $h1color;
+    font-weight: 500;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    text-align: center;
+    padding-left: 0.375em;
+    overflow: auto;
+    width: 45%;
+    height: 45%;
+  }
+  > span.h2 {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    z-index: 5;
     color: white;
-    font-size: 1.5em;
-    letter-spacing: 0.5em;
+    font-size: 1.3em;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
     font-weight: 300;
     padding-left: 0.375em;
     overflow: auto;
     text-decoration: underline 1px solid #ccc;
   } 
+  > span.footer {
+    position: absolute;
+    z-index: 5;
+    top: 80%;
+    left: 10%;
+    color: white;
+    font-size: 0.8em;
+    padding-left: 0.375em;
+    overflow: auto;
+    width: 50%;
+    height: 5%;
+  }
+
+  img.theix {
+      width:250px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  h2 {
+    font-weight: 300;
+   font-size: 1.3em;
+   text-transform: lowercase;
+}
+
+  h4 {
+    font-weight: 300;
+    padding-top: 1.4em;
+}
 
 /* Works on Firefox */
 * {

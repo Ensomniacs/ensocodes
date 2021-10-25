@@ -19,20 +19,17 @@ body {
   box-sizing: border-box;
 }
 
-.blur {
-  height: 100%;
-  width: 100%;
-  background-image: url("https://ensomniacs.github.io/it-topaz/prototype/assets/img/emissary.jpeg");
-  background-size: cover;
-  background-position: center;
-  -webkit-clip-path: inset(10em);
-          clip-path: inset(10em);
-  filter: blur(35px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+h1 {
+  color: #8EA9AB;
+  font-weight: 500;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  text-align: center;
+  padding-left: 0.375em;
 }
 
+/*Dust is content*/
 .dust {
   height: 100%;
   width: 100%;
@@ -40,6 +37,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /*blur in content*/
   /* Works on Firefox */
   /* Works on Chrome, Edge, and Safari */
 }
@@ -55,22 +53,47 @@ body {
   border-right: 1px solid rgba(12, 110, 117, 0.3);
   z-index: 2;
 }
+.dust .blur {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://ensomniacs.github.io/it-topaz/prototype/assets/img/emissary.jpeg");
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: inset(10em);
+          clip-path: inset(10em);
+  filter: blur(35px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .dust > span.lft {
   position: absolute;
   left: 10%;
-  top: 25%;
+  top: 18%;
   z-index: 5;
   color: white;
-  font-size: 1.2em;
+  font-size: 1em;
   padding-left: 0.375em;
   overflow: auto;
-  width: 45%;
-  height: 45%;
+  width: 30%;
+  height: 30%;
+}
+.dust > span.Emissary {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  z-index: 5;
+  color: white;
+  font-size: 1em;
+  padding-left: 0.375em;
+  overflow: auto;
+  width: 30%;
+  height: 40%;
 }
 .dust > span {
   position: absolute;
   right: 10%;
-  top: 25%;
+  top: 30%;
   z-index: 5;
   color: white;
   font-size: 1.1em;
@@ -80,23 +103,63 @@ body {
   width: 45%;
   height: 45%;
 }
-.dust > span h4 {
-  font-weight: 300;
-}
-.dust > span.h2 {
+.dust > span.h1 {
   position: absolute;
   right: 10%;
   top: 20%;
   z-index: 5;
+  color: #8EA9AB;
+  font-weight: 500;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  text-align: center;
+  padding-left: 0.375em;
+  overflow: auto;
+  width: 45%;
+  height: 45%;
+}
+.dust > span.h2 {
+  position: absolute;
+  right: 10%;
+  top: 25%;
+  z-index: 5;
   color: white;
-  font-size: 1.5em;
-  letter-spacing: 0.5em;
+  font-size: 1.3em;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   font-weight: 300;
   padding-left: 0.375em;
   overflow: auto;
   -webkit-text-decoration: underline 1px solid #ccc;
           text-decoration: underline 1px solid #ccc;
+}
+.dust > span.footer {
+  position: absolute;
+  z-index: 5;
+  top: 80%;
+  left: 10%;
+  color: white;
+  font-size: 0.8em;
+  padding-left: 0.375em;
+  overflow: auto;
+  width: 50%;
+  height: 5%;
+}
+.dust img.theix {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dust h2 {
+  font-weight: 300;
+  font-size: 1.3em;
+  text-transform: lowercase;
+}
+.dust h4 {
+  font-weight: 300;
+  padding-top: 1.4em;
 }
 .dust * {
   scrollbar-width: thin;
