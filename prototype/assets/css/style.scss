@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500&display=swap"');
 
-$blur: 20px;
+$blur: 35px;
 $shadow-opacity: 0.30;
-$image: 'prototype/assets/img/emissary.jpeg';
+$image: 'https://ensomniacs.github.io/it-topaz/prototype/assets/img/emissary.jpeg';
 
 
 body, html {
@@ -19,7 +19,7 @@ body {
   background-image: url($image);
   background-size: cover;
   background-position: center;
-font-family: 'Rajdhani', sans-serif;
+  font-family: 'Zen Kaku Thothic Antique', sans-serif;
 
 }
 
@@ -54,22 +54,42 @@ font-family: 'Rajdhani', sans-serif;
     top: 10em;
      height: calc(100% - 20em);
     width: calc(100% - 20em);
-     border-top: 2px solid rgba(225,225,225, 0.2);
-    border-left: 1px solid rgba(225,225,225, 0.1);
-     border-right: 1px solid rgba(225,225,225, 0.3);
+     border-top: 2px solid rgba(12, 110, 117, 0.2);
+    border-left: 1px solid rgba(12, 110, 117, 0.1);
+     border-right: 1px solid rgba(12, 110, 117, 0.3);
      z-index: 2;
    //  filter: blur(1px);
   }
-    
-  
-  > span {
+  > span.lft {
     position: absolute;
+    left: 10%;
+    top: 25%;
     z-index: 5;
     color: white;
-    font-size: 1em;
-    letter-spacing: 0.75em;
+    font-size: 1.2em;
     padding-left: 0.375em;
+    overflow: auto;
+    width: 45%;
+    height: 45%;
+
   }
+  > span {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    z-index: 5;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 300;
+    padding-left: 0.375em;
+    overflow: auto;
+    width: 45%;
+    height: 45%;
+  }
+  > span h2 {
+      font-weight: 400;
+  }
+  
 }
 
 @media (max-width: 980px) {
@@ -82,7 +102,7 @@ font-family: 'Rajdhani', sans-serif;
       width: calc(100% - 10em);
     }
     > span {
-      font-size: 0.8em;
+      font-size: 1em;
     }
   }
 }
@@ -91,7 +111,7 @@ font-family: 'Rajdhani', sans-serif;
   
   .dust {
     > span {
-      font-size: 0.66em;
+      font-size: 0.9em;
     }
   }
 }

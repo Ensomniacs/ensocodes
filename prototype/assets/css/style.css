@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500&display=swap"');
 body, html {
   height: 100%;
   margin: 0;
@@ -9,10 +9,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("prototype/assets/img/emissary.jpeg");
+  background-image: url("https://ensomniacs.github.io/it-topaz/prototype/assets/img/emissary.jpeg");
   background-size: cover;
   background-position: center;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Zen Kaku Thothic Antique", sans-serif;
 }
 
 *, *:before, *:after {
@@ -22,12 +22,12 @@ body {
 .blur {
   height: 100%;
   width: 100%;
-  background-image: url("prototype/assets/img/emissary.jpeg");
+  background-image: url("https://ensomniacs.github.io/it-topaz/prototype/assets/img/emissary.jpeg");
   background-size: cover;
   background-position: center;
   -webkit-clip-path: inset(10em);
           clip-path: inset(10em);
-  filter: blur(20px);
+  filter: blur(35px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,18 +48,38 @@ body {
   top: 10em;
   height: calc(100% - 20em);
   width: calc(100% - 20em);
-  border-top: 2px solid rgba(225, 225, 225, 0.2);
-  border-left: 1px solid rgba(225, 225, 225, 0.1);
-  border-right: 1px solid rgba(225, 225, 225, 0.3);
+  border-top: 2px solid rgba(12, 110, 117, 0.2);
+  border-left: 1px solid rgba(12, 110, 117, 0.1);
+  border-right: 1px solid rgba(12, 110, 117, 0.3);
   z-index: 2;
+}
+.dust > span.lft {
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  z-index: 5;
+  color: white;
+  font-size: 1.2em;
+  padding-left: 0.375em;
+  overflow: auto;
+  width: 45%;
+  height: 45%;
 }
 .dust > span {
   position: absolute;
+  right: 10%;
+  top: 25%;
   z-index: 5;
   color: white;
-  font-size: 1em;
-  letter-spacing: 0.75em;
+  font-size: 1.1em;
+  font-weight: 300;
   padding-left: 0.375em;
+  overflow: auto;
+  width: 45%;
+  height: 45%;
+}
+.dust > span h2 {
+  font-weight: 400;
 }
 
 @media (max-width: 980px) {
@@ -73,11 +93,11 @@ body {
     width: calc(100% - 10em);
   }
   .drop-shadow > span {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 }
 @media (max-width: 640px) {
   .dust > span {
-    font-size: 0.66em;
+    font-size: 0.9em;
   }
 }/*# sourceMappingURL=style.css.map */
