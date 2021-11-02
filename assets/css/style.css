@@ -1,0 +1,51 @@
+/* font family import */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500&display=swap"');
+/*muted colors listed in scss*/
+body {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 1.2em;
+  color: #0D0D0D;
+  background-color: #9ca6a6;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: "head head head" "container container sidebar" "footer footer sidebar";
+}
+
+.logo {
+  max-width: 60px;
+  padding: 5px;
+  float: left;
+}
+
+header {
+  grid-area: head;
+}
+
+.container {
+  grid-area: container;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.primary, .container {
+  background-color: #d0d8d9;
+}
+
+a, a:hover, a:active, a:visited {
+  color: #118c80;
+}
+
+h1 {
+  color: #118c80;
+  border-bottom: 2px solid #0D0D0D;
+}/*# sourceMappingURL=style.css.map */
