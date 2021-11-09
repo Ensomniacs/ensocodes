@@ -9,12 +9,29 @@ $teal: #05f2db;
 $slate: #9ca6a6;
 $lightgray: #d0d8d9;
 
+
+/* ----------------- Box Sizing ---------------- */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* Global */
 body {
     font-family: "Zen Kaku Gothic Antique", sans-serif;
-    font-size: 1.2em;
     color: $dark;
+    font-size: 1rem;
     background-color: $slate;
+    margin: 0;
 }
+
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -25,11 +42,31 @@ body {
       "footer footer sidebar";
 }
 
-header {
+header.primary {
     grid-area: head;
+    font-size: 1.2rem;
+    background-color: $slate;
+    padding: 20px 40px;
+}
+header.primary h1 {
+    color: $darkteal;
+    font-size: 2.4rem;
+    border-bottom: 3px solid $darkteal;
+}
+header.primary h1 a {
+    color: $lightgray;
+    text-decoration: none;
+}
+header.primary h1 a:hover {
+    color: $blue;
+}
+header.primary h2{
+    color: $teal;
+    font-size: 2rem;
 }
 .container {
     grid-area: container;
+    background-color: $lightgray;
 }
 aside {
     grid-area: sidebar;
@@ -39,14 +76,8 @@ footer {
     grid-area: footer;
 }
 
-.primary, .container {
-    background-color: $lightgray;
-}
 a, a:hover, a:active, a:visited {
     color: $darkteal;
 }
 
-h1 {
-    color: $darkteal;
-    border-bottom: 2px solid $dark;
-}
+/* Mobile Views */

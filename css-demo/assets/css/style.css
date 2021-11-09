@@ -1,11 +1,24 @@
 /* font family import */
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500&display=swap"');
 /*muted colors listed in scss*/
+/* ----------------- Box Sizing ---------------- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Global */
 body {
   font-family: "Zen Kaku Gothic Antique", sans-serif;
-  font-size: 1.2em;
   color: #0D0D0D;
+  font-size: 1rem;
   background-color: #9ca6a6;
+  margin: 0;
 }
 
 .wrapper {
@@ -15,12 +28,36 @@ body {
   grid-template-areas: "head head head" "container container sidebar" "footer footer sidebar";
 }
 
-header {
+header.primary {
   grid-area: head;
+  font-size: 1.2rem;
+  background-color: #9ca6a6;
+  padding: 20px 40px;
+}
+
+header.primary h1 {
+  color: #118c80;
+  font-size: 2.4rem;
+  border-bottom: 3px solid #118c80;
+}
+
+header.primary h1 a {
+  color: #d0d8d9;
+  text-decoration: none;
+}
+
+header.primary h1 a:hover {
+  color: #1790BF;
+}
+
+header.primary h2 {
+  color: #05f2db;
+  font-size: 2rem;
 }
 
 .container {
   grid-area: container;
+  background-color: #d0d8d9;
 }
 
 aside {
@@ -31,15 +68,8 @@ footer {
   grid-area: footer;
 }
 
-.primary, .container {
-  background-color: #d0d8d9;
-}
-
 a, a:hover, a:active, a:visited {
   color: #118c80;
 }
 
-h1 {
-  color: #118c80;
-  border-bottom: 2px solid #0D0D0D;
-}/*# sourceMappingURL=style.css.map */
+/* Mobile Views *//*# sourceMappingURL=style.css.map */
