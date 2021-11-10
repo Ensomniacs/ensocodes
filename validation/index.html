@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="IT Topaz Valiadation" />
+  <meta name="author" content="Eli Brewer" />
+  <meta property="og:site_name" content="Validation Assignment">
+  <meta property="og:title" content="IT Topaz">
+  <meta property="og:url" content="http://ensomniacs.github.io/it-topaz/validation/index.html">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  </head>
+<h1>New Patient Registartion</h1>
+<p><strong>Please fill out the form below</strong></p>
+
+<form id="ValidationForm" action="https://bruceboauer.info/assets/ITEC3650/datadump.php">
+    <p><label for="fname" class="formlabel">First Name:</label>
+    <input type="text" id="fname" name="fname" size="30" maxlength="30"></p>
+    <p><label for="mi" class="formlabel">Middle Initial:</label>
+    <input type="text" id="mi" name="mi" size="1" maxlength="1"></p>
+    <p><label for="lname" class="formlabel">Last Name:</label>
+    <input type="text" id="lname" name="lname" size="30" maxlength="30"></p>
+    <p><label for="email" class="formlabel">Email:</label>
+    <input type="text" id="email" name="email" size="30" maxlength="30"></p>
+    <p><label class="formlabel">Sex:</label>
+    <label for="Male"><input type="radio" name="sex" id="Male" value="Male">Male</label>
+    <label for="Female"><input type="radio" name="sex" id="Female" value="Female">Female</label>
+    <label for="N/A"><input type="radio" name="sex" id="N/A" value="N/A">N/A</label></p>
+    <p><label for="birthday" class="formlabel">Birthday:</label>
+    <input type="text" id="birthday" name="birthday" size="8" maxlength="8"></p>
+    <p><label for="height" class="formlabel">Height (inches):</label>
+    <input type="text" id="height" name="height" size="3" maxlength="3"></p>
+    <p><label for="weight" class="formlabel">Weight (pounds):</label>
+    <input type="text" id="weight" name="weight" size="3" maxlength="3"></p>
+    <hr>
+    <p><label for="PNumber" class="formlabel">Phone Number:</label>
+    <input type="text" id="PNumber" name="PNumber" size="14" maxlength="14"></p>
+    <p><label for="MartialStatus" class="formlabel">Marital Status:</label>
+    <select name="MartialStatus" id="MartialStatus">
+        <option value="">Select a Status</option>
+        <option value="S">Single</option>
+        <option value="M">Married</option>
+        <option value="D">Divorced</option>
+        <option value="L">Legally Separated</option>
+        <option value="W">Widowed</option>
+    </select></p>
+    <p><input type="submit" value="Validation Submit" Name="SubmitButton"></p>
+</form>
+
