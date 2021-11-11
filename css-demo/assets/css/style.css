@@ -31,23 +31,56 @@ body {
 header.primary {
   grid-area: head;
   font-size: 1.2rem;
-  background-color: #9ca6a6;
+  background-color: #0D0D0D;
   padding: 20px 40px;
+  text-align: center;
 }
-
 header.primary h1 {
   color: #118c80;
   font-size: 2.4rem;
   border-bottom: 3px solid #118c80;
 }
-
 header.primary h1 a {
   color: #d0d8d9;
   text-decoration: none;
 }
-
 header.primary h1 a:hover {
   color: #1790BF;
+}
+header.primary h2 {
+  color: #05f2db;
+  font-size: 2rem;
+}
+header.primary nav {
+  width: 70vw;
+  margin: 20px auto;
+  max-width: 900px;
+}
+header.primary nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0;
+}
+header.primary nav ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+header.primary nav ul li a, header.primary nav ul li a:visited {
+  color: #d0d8d9;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #05f2db;
+  padding: 8px 16px;
+  border-radius: 24px;
+}
+header.primary nav ul li a:hover, header.primary nav ul li a:active {
+  color: #0D0D0D;
+  padding: 8px 16px;
+  border: 2px solid #05f2db;
+  background-color: #05f2db;
+  transition: 0.4s;
 }
 
 header.primary h2 {
@@ -72,4 +105,18 @@ a, a:hover, a:active, a:visited {
   color: #118c80;
 }
 
-/* Mobile Views *//*# sourceMappingURL=style.css.map */
+/* Mobile Views */
+@media screen and (max-width: 500px) {
+  header.primary nav ul {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  header.primary nav li {
+    margin-bottom: 15px;
+  }
+
+  header.primary a {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
