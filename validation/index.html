@@ -10,31 +10,58 @@
   <meta property="og:url" content="http://ensomniacs.github.io/it-topaz/validation/index.html">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-  </head>
+</head>
 <body>
 <form id="ValidationForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
   <h1>New Patient Registartion</h1>
   <h5>Please fill out the form below</h5>
     
   <label for="FirstName" class="formlabel">First Name:</label>
-  <input type="text" id="FirstName" name="FirstName" size="30" maxlength="30">
+  <input type="text" id="FirstName" name="FirstName" size="30" maxlength="30"
+    data-rule-required="true" data-msg-required="First Name is Required">
+    <label for="FirstName" class="error"></label>
+  
   <p><label for="MiddleInitial" class="formlabel">Middle Initial:</label>
     <input type="text" id="MiddleInitial" name="MiddleInitial" size="1" maxlength="1"></p>
+
     <p><label for="LastName" class="formlabel">Last Name:</label>
-    <input type="text" id="LastName" name="LastName" size="30" maxlength="30"></p>
+    <input type="text" id="LastName" name="LastName" size="30" maxlength="30"
+      data-rule-required="true" data-msg-required="Last Name is Required">
+      <label for="LastName" class="error"></label></p>
+    
     <p><label for="Email" class="formlabel">Email:</label>
-    <input type="text" id="Email" name="Email" size="30" maxlength="30"></p>
-    <p><label class="formlabel">Sex:</label>
+    <input type="email" id="Email" name="Email" size="30" maxlength="30"
+      data-rule-required="true" data-msg-required="Email is Required"
+      data-rule-email="true" data-msg-email="Invalid Email">
+      <label for="Email" class="error"></label></p>
+    
+    <p><label class="formlabel" for="Sex">Sex:</label>
     <label for="Male"><input type="radio" name="sex" id="Male" value="Male">Male</label>
     <label for="Female"><input type="radio" name="sex" id="Female" value="Female">Female</label>
-    <label for="N/A"><input type="radio" name="sex" id="N/A" value="N/A">N/A</label></p>
+    <label for="N/A"><input type="radio" name="sex" id="N/A" value="N/A">N/A</label>
+  
+    <label for="Sex" class="error"></label></p>
+
     <p><label for="Birthday" class="formlabel">Birthday:</label>
-    <input type="text" id="Birthday" name="Birthday" size="8" maxlength="8"></p>
+    <input type="date" id="Birthday" name="Birthday" size="8" maxlength="8"
+    data-rule-required="true" data-msg-required="Birthday is Required"
+    data-rule-date="true" data-msg-date="Date must be MM/DD/YYYY format"></p>
+    
     <p><label for="Height" class="formlabel">Height (inches):</label>
-    <input type="text" id="Height" name="height" size="3" maxlength="3"></p>
+    <input type="text" id="Height" name="height" size="3" maxlength="3"
+    data-rule-required="true" data-msg-required="Height is required"
+    data-rule-number="true" data-msg-number="Height must be a number in inches."
+    data-rule-min="12" data-msg-min="Height must be greater than or equal to 12 inches"
+    data-rule-max="1200" data-msg-max="Height must be less than or equal to 1200 inches"></p>
+    
     <p><label for="Weight" class="formlabel">Weight (pounds):</label>
-    <input type="text" id="Weight" name="Weight" size="3" maxlength="3"></p>
+    <input type="text" id="Weight" name="Weight" size="3" maxlength="3"
+    data-rule-required="true" data-msg-required="Weight is required"
+    data-rule-number="true" data-msg-number="weight must be a number in pounds."
+    data-rule-min="10" data-msg-min="Weight must be greater than or equal to 10 pounds"
+    data-rule-max="500" data-msg-max="Weight must be less than or equal to 500 pounds"></p>
     <hr>
+    
     <p><label for="PhoneNumber" class="formlabel">Phone Number:</label>
     <input type="text" id="PhoneNumber" name="PhoneNumber" size="14" maxlength="14"></p>
     <p><label for="MartialStatus" class="formlabel">Marital Status:</label>
@@ -113,4 +140,9 @@
   
   <p><input type="submit" value="Submit Patient Form"></p>
 </form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>  
+<script src="assets/js/validation.js"></script>
 </body>
