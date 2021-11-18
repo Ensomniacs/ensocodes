@@ -23,6 +23,15 @@ html {
 }
 
 
+/* particles */
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
 /* utility classes */
 .container {
     width: 70vw;
@@ -113,7 +122,7 @@ header.primary h2{
 }
 
 .container {
-    background-color: $dark;
+    background-color: $black;
 }
 
 #intro {
@@ -159,6 +168,9 @@ aside[role="complementary"]{
     & .container {
         color: inherit;
         background-color: $blue;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     & a:link {
         color: $dark;
@@ -166,6 +178,35 @@ aside[role="complementary"]{
     & a:hover, a:visited {
         color: $lightgray;
     }
+    & article {
+        width: 50%;
+        padding: 10px;
+        
+        & a:last-child {
+            display: block;
+            margin: .8rem 0;
+        }
+        & footer {
+            visibility: hidden;
+        }
+    }
+    & article:last-child {
+        width: 100%;
+    }
+}
+
+#colophon {
+    background-color: $dark;
+    color: $lightgray;
+    padding: 10px;
+
+    & h6 {
+        margin: 0;
+        text-align: center;
+        font-size: .8em;
+        text-transform: uppercase;
+    }
+
 }
 
 /* Mobile Views */

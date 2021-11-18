@@ -12,6 +12,15 @@ html {
   box-sizing: inherit;
 }
 
+/* particles */
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
 /* utility classes */
 .container {
   width: 70vw;
@@ -96,7 +105,7 @@ header.primary h2 {
 }
 
 .container {
-  background-color: #1A1818;
+  background-color: #0D0D0D;
 }
 
 #intro {
@@ -139,12 +148,41 @@ aside[role=complementary] {
 aside[role=complementary] .container {
   color: inherit;
   background-color: #1790BF;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 aside[role=complementary] a:link {
   color: #1A1818;
 }
 aside[role=complementary] a:hover, aside[role=complementary] a:visited {
   color: #d0d8d9;
+}
+aside[role=complementary] article {
+  width: 50%;
+  padding: 10px;
+}
+aside[role=complementary] article a:last-child {
+  display: block;
+  margin: 0.8rem 0;
+}
+aside[role=complementary] article footer {
+  visibility: hidden;
+}
+aside[role=complementary] article:last-child {
+  width: 100%;
+}
+
+#colophon {
+  background-color: #1A1818;
+  color: #d0d8d9;
+  padding: 10px;
+}
+#colophon h6 {
+  margin: 0;
+  text-align: center;
+  font-size: 0.8em;
+  text-transform: uppercase;
 }
 
 /* Mobile Views */
