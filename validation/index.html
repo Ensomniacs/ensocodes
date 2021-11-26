@@ -64,7 +64,8 @@
     <p><label for="PhoneNumber" class="formlabel">Phone Number:</label>
     <input type="text" id="PhoneNumber" name="PhoneNumber" size="14" maxlength="14"></p>
     <p><label for="MartialStatus" class="formlabel">Marital Status:</label>
-    <select name="MartialStatus" id="MartialStatus">
+    <select name="MartialStatus" id="MartialStatus"
+    data-rule-required="true" data-msg-required="Marital Status Required">
         <option value="">Select a Status</option>
         <option value="S">Single</option>
         <option value="M">Married</option>
@@ -129,10 +130,15 @@
     <option value="WV">West Virginia</option>
     <option value="WI">Wisconsin</option>
     <option value="WY">Wyoming</option>
-  </select> <input type="text" id="Zip" name="Zip" size="5" maxlength="5"></p>
+  </select> <input type="text" id="Zip" name="Zip" size="5" maxlength="5"
+  data-rule-required="true" data-msg-required="Address is required"></p>
   <p><label for="Medications" class="formlabel">Medications:</label>
-    <label for="Yes"><input type="radio" name="Medications" id="Yes" value="Y">Yes</label>
-    <label for="No"><input type="radio" name="Medications" id="No" value="N">No</label>
+    <label for="Yes">
+      <input type="radio" name="Medications" id="Yes" value="Y"
+      data-rule-required="true"  data-msg-required="Medication is Required">Yes</label>
+    <label for="No">
+      <input type="radio" name="Medications" id="No" value="N">No</label>
+    <label for="Medications" class="error"></label>
     </p>
   <p><label for="MedicationsList" class="formlabel">If yes, list medications here:</label>
   <textarea id="MedicationsList" name="MedicationsList" rows="3" cols="30"></textarea></p>
