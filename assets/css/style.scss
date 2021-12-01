@@ -44,7 +44,10 @@ body {
     height: 65vh;
     position: relative;
     background-color: $dark;
-    background-image: url("assets/img/masthead.jpg");
+    background-image: url("https://ensomniacs.github.io/it-topaz/assets/img/masthead.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
 
       & .mast-intro, .mast-heading {
           text-align: center;
