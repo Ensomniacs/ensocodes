@@ -21,7 +21,6 @@ body {
 
 .section {
   padding: 5rem 0;
-  height: 45vh;
 }
 .sectionbanner {
   background: #d0d8d9;
@@ -44,7 +43,7 @@ body {
   height: 100%;
 }
 .masthead .mast-intro {
-  margin-top: 1.8em;
+  margin-top: 2.4em;
   font-size: 2.7rem;
   text-transform: uppercase;
   color: #9ca6a6;
@@ -188,10 +187,50 @@ a:hover {
   border-radius: 2.7rem;
 }
 
-.features {
+.footer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  text-align: center;
+  text-align: left;
   padding-top: 4rem;
+  color: inherit;
+}
+.footer p {
+  color: #118c80;
+  font-size: 1.2rem;
+}
+
+.fas {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #d0d8d9;
+  color: #118c80;
+  padding: 20px;
+}
+footer h4 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+footer h6 {
+  margin: 0;
+  text-align: center;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+footer ul a {
+  color: #118c80;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+footer ul a:hover {
+  color: #1790BF !important;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
