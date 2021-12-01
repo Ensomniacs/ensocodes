@@ -16,19 +16,11 @@ html {
 }
 
 body {
-  font-family: Inter, Zen Kaku Gothic Antique, sans-serif;
-}
-
-.section {
-  padding: 5rem 0;
-}
-.sectionbanner {
-  background: #d0d8d9;
-  position: relative;
-  overflow: hidden;
+  font-family: Inter, sans-serif;
 }
 
 .masthead {
+  font-family: Zen Kaku Gothic Antique;
   padding: 6em 0;
   height: 65vh;
   position: relative;
@@ -58,6 +50,7 @@ body {
 }
 
 nav {
+  font-family: Zen Kaku Gothic Antique;
   background: #118c80;
   height: 65px;
   position: -webkit-sticky;
@@ -98,22 +91,46 @@ nav ul li {
   padding-top: 60px;
 }
 
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
+.section {
+  padding: 5rem 0;
+}
+.sectionbanner {
+  background: #d0d8d9;
+  position: relative;
+  overflow: hidden;
 }
 
-.pieces {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 3rem 0;
-  grid-gap: 4rem;
+.container {
+  width: 80vw;
+  margin: auto;
+  max-width: 900px;
+  padding: 30px 25px;
 }
-.piecesnumber {
+
+#content.container {
+  padding-bottom: 2.7rem;
+}
+#content.container .pieces {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#content.container .pieces .point {
+  width: 43%;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+}
+#content.container .piecesnumber {
+  font-family: Inter;
   font-size: 10rem;
   font-weight: 800;
   letter-spacing: -0.5rem;
   color: #9ca6a6;
+}
+#content.container .pieces p {
+  max-width: 80vw;
+  text-indent: 1.2em;
 }
 
 .banner {
@@ -134,6 +151,10 @@ nav ul li {
   top: 0;
   right: 0;
   left: 50%;
+  background-image: url("https://ensomniacs.github.io/it-topaz/assets/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 h2 {
@@ -239,4 +260,94 @@ footer ul {
   padding: 0;
   margin: 0;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 710px) {
+  .banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-area: "left left" "right right";
+    justify-content: space-between;
+  }
+  .banner .left {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .banner .right {
+    display: none;
+  }
+
+  #content.container {
+    padding-bottom: 2.7rem;
+  }
+  #content.container .pieces {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #content.container .pieces .preview {
+    max-width: 60vw;
+    padding-bottom: 10px;
+  }
+  #content.container .pieces .point {
+    width: 75%;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+  #content.container .piecesnumber {
+    font-family: Inter;
+    font-size: 8rem;
+    font-weight: 800;
+    letter-spacing: -0.5rem;
+    color: #9ca6a6;
+  }
+}
+@media screen and (max-width: 400px) {
+  p {
+    font-size: 1.6em;
+  }
+
+  .banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-area: "left left" "right right";
+    justify-content: space-between;
+  }
+  .banner .left {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .banner .right {
+    display: none;
+  }
+
+  #content.container {
+    padding-bottom: 2.9rem;
+  }
+  #content.container .pieces {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #content.container .pieces .preview {
+    max-width: 65vw;
+  }
+  #content.container .pieces .point {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  #content.container .piecesnumber {
+    font-family: Inter;
+    font-size: 8rem;
+    font-weight: 800;
+    letter-spacing: -0.5rem;
+    color: #9ca6a6;
+  }
 }/*# sourceMappingURL=style.css.map */
