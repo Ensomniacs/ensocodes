@@ -6,7 +6,6 @@
 $dark: #0D0D0D;
 $blue: #1790BF;
 $darkteal: #118c80;
-$teal: #05f2db;
 $slate: #9ca6a6;
 $lightgray: #d0d8d9;
 
@@ -25,6 +24,9 @@ html {
 
 body {
   font-family: Inter, sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 0;
 }
   
 .masthead {
@@ -49,13 +51,13 @@ body {
 
     & .mast-intro {
         margin-top: 2.4em;
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-transform: uppercase;
         color: $slate;
     }
    
     & .mast-heading {
-        font-size: 10rem;
+        font-size: 3rem;
         color: $darkteal;
     }
   }
@@ -74,7 +76,6 @@ body {
         line-height:65px;
         padding:20px 15px;
         color: $lightgray;
-        font-size: 1.9em;
         letter-spacing: 2px;
         font-weight: 700;
         text-transform: uppercase;
@@ -138,14 +139,14 @@ body {
       
       &number {
       font-family: Inter;
-      font-size: 10rem;
+      font-size: 5rem;
       font-weight: 800;
       letter-spacing: -.5rem;
       color: $slate;
     }
       & p {
         max-width: 80vw;
-        font-size: 2em;
+        font-size: 1rem;
         text-indent: 1.2em;
       }
     }
@@ -194,7 +195,7 @@ body {
 
 
 h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 600; 
   letter-spacing: -1.5px;
   line-height: 4.5rem;
@@ -202,13 +203,12 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 600;
   padding-bottom: 1rem;
 }
 
 p {
-  font-size: 1.6em;
   color: $dark;
   margin-bottom: auto;
 }
@@ -257,12 +257,11 @@ a:hover {
 
     & p {
         color: $darkteal;
-        font-size: 1.2rem;
     }
   }
   
   .fas {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
   }
 
@@ -276,17 +275,17 @@ footer {
     text-transform: uppercase;
     }
 
-    & h5 {
+    & h4 {
         margin: 0;
         padding-top: 30px;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 0.6rem;
         text-transform: uppercase;
     }
 
     & ul a {
         color: $darkteal;
-        font-size: 1.5rem;
+        font-size: .8rem;
         font-weight: 500;
         text-transform: uppercase;
     }
@@ -297,11 +296,28 @@ footer {
     list-style:none;
     padding:0;
     margin:0;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
   }
 }
 
-@media screen and (max-width:710px) {
+
+/* Tablet view */
+@media screen and (min-width:300px) and (max-width:720px) {
+
+  nav {
+    font-family:  Zen Kaku Gothic Antique;
+    background:$darkteal;
+    height:75px;
+    position:-webkit-sticky; 
+    position: sticky; 
+    top:0;
+    z-index: 10;
+
+    & ul a {
+        font-size: 1.9em;
+  }
+}
+
   .banner {
       display: flex;
       flex-direction:column;
@@ -319,6 +335,14 @@ footer {
       line-height: 4.5rem;
       padding-bottom: 2rem;
     }
+  }
+
+
+  .container {
+    width: 80vw;
+    margin: auto;
+    max-width: 720px;
+    padding: 30px 25px;
   }
 
 #content.container {
@@ -339,61 +363,6 @@ footer {
           width: 75%;
           padding: .4rem;
           font-size: .8rem;
-      }
-      &number {
-      font-family: Inter;
-      font-size: 8rem;
-      font-weight: 800;
-      letter-spacing: -.5rem;
-      color: $slate;
-    }
-    }
-  }
-}
-
-@media screen and (max-width:450px) {
-  
-  p {
-    font-size: 3em;
-  }
-  
-  .banner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-area:
-      "left left"
-      "right right";
-    justify-content: space-between;
-    
-    & .left {
-      width: 60vw;
-    }
-    
-    h2 {
-      font-size: 7em;
-      font-weight: 600; 
-      letter-spacing: -1.5px;
-      line-height: 4.5rem;
-      padding-bottom: 2rem;
-    }
-  }
-  
-#content.container {
-    padding-bottom: 2.9rem;
-    
-    & .pieces{
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      
-      & .preview {
-         max-width: 65vw;
-      }
-      
-     & .point { 
-          width: 100%;
-          font-size: 0.9rem;
       }
       &number {
       font-family: Inter;

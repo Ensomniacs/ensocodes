@@ -16,6 +16,9 @@ html {
 
 body {
   font-family: Inter, sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 0;
 }
 
 .masthead {
@@ -39,12 +42,12 @@ body {
 }
 .masthead .mast-intro {
   margin-top: 2.4em;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   color: #9ca6a6;
 }
 .masthead .mast-heading {
-  font-size: 10rem;
+  font-size: 3rem;
   color: #118c80;
 }
 
@@ -62,7 +65,6 @@ nav ul a {
   line-height: 65px;
   padding: 20px 15px;
   color: #d0d8d9;
-  font-size: 1.9em;
   letter-spacing: 2px;
   font-weight: 700;
   text-transform: uppercase;
@@ -122,14 +124,14 @@ nav ul li {
 }
 #content.container .piecesnumber {
   font-family: Inter;
-  font-size: 10rem;
+  font-size: 5rem;
   font-weight: 800;
   letter-spacing: -0.5rem;
   color: #9ca6a6;
 }
 #content.container .pieces p {
   max-width: 80vw;
-  font-size: 2em;
+  font-size: 1rem;
   text-indent: 1.2em;
 }
 
@@ -170,7 +172,7 @@ section #about.container .about .point1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: -1.5px;
   line-height: 4.5rem;
@@ -178,13 +180,12 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 600;
   padding-bottom: 1rem;
 }
 
 p {
-  font-size: 1.6em;
   color: #0D0D0D;
   margin-bottom: auto;
 }
@@ -234,11 +235,10 @@ a:hover {
 }
 .footer p {
   color: #118c80;
-  font-size: 1.2rem;
 }
 
 .fas {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
@@ -251,16 +251,16 @@ footer h3 {
   color: #1790BF;
   text-transform: uppercase;
 }
-footer h5 {
+footer h4 {
   margin: 0;
   padding-top: 30px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 0.6rem;
   text-transform: uppercase;
 }
 footer ul a {
   color: #118c80;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -271,10 +271,24 @@ footer ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
 }
 
-@media screen and (max-width: 710px) {
+/* Tablet view */
+@media screen and (min-width: 300px) and (max-width: 720px) {
+  nav {
+    font-family: Zen Kaku Gothic Antique;
+    background: #118c80;
+    height: 75px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  nav ul a {
+    font-size: 1.9em;
+  }
+
   .banner {
     display: flex;
     flex-direction: column;
@@ -290,6 +304,13 @@ footer ul {
     letter-spacing: -1.5px;
     line-height: 4.5rem;
     padding-bottom: 2rem;
+  }
+
+  .container {
+    width: 80vw;
+    margin: auto;
+    max-width: 720px;
+    padding: 30px 25px;
   }
 
   #content.container {
@@ -309,52 +330,6 @@ footer ul {
     width: 75%;
     padding: 0.4rem;
     font-size: 0.8rem;
-  }
-  #content.container .piecesnumber {
-    font-family: Inter;
-    font-size: 8rem;
-    font-weight: 800;
-    letter-spacing: -0.5rem;
-    color: #9ca6a6;
-  }
-}
-@media screen and (max-width: 450px) {
-  p {
-    font-size: 3em;
-  }
-
-  .banner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-area: "left left" "right right";
-    justify-content: space-between;
-  }
-  .banner .left {
-    width: 60vw;
-  }
-  .banner h2 {
-    font-size: 7em;
-    font-weight: 600;
-    letter-spacing: -1.5px;
-    line-height: 4.5rem;
-    padding-bottom: 2rem;
-  }
-
-  #content.container {
-    padding-bottom: 2.9rem;
-  }
-  #content.container .pieces {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  #content.container .pieces .preview {
-    max-width: 65vw;
-  }
-  #content.container .pieces .point {
-    width: 100%;
-    font-size: 0.9rem;
   }
   #content.container .piecesnumber {
     font-family: Inter;
