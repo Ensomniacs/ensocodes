@@ -276,6 +276,10 @@ footer ul {
 
 /* Tablet view */
 @media screen and (min-width: 300px) and (max-width: 720px) {
+  body {
+    font-size: 1.2rem;
+  }
+
   nav {
     font-family: Zen Kaku Gothic Antique;
     background: #118c80;
@@ -286,7 +290,7 @@ footer ul {
     z-index: 10;
   }
   nav ul a {
-    font-size: 1.9em;
+    font-size: 0.9em;
   }
 
   .banner {
@@ -299,7 +303,7 @@ footer ul {
     max-width: 75vw;
   }
   .banner h2 {
-    font-size: 7em;
+    font-size: 3em;
     font-weight: 600;
     letter-spacing: -1.5px;
     line-height: 4.5rem;
@@ -310,12 +314,8 @@ footer ul {
     width: 80vw;
     margin: auto;
     max-width: 720px;
-    padding: 30px 25px;
   }
 
-  #content.container {
-    padding-bottom: 2.7rem;
-  }
   #content.container .pieces {
     display: flex;
     flex-direction: column;
@@ -327,13 +327,13 @@ footer ul {
     padding-bottom: 10px;
   }
   #content.container .pieces .point {
-    width: 75%;
+    width: 80%;
     padding: 0.4rem;
     font-size: 0.8rem;
   }
   #content.container .piecesnumber {
     font-family: Inter;
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: 800;
     letter-spacing: -0.5rem;
     color: #9ca6a6;
