@@ -32,6 +32,25 @@ html {
     padding: 30px 25px;
 }
 
+.img-right {
+    float: right;
+    padding: 5px;
+    border: 2px solid $teal;
+    margin: 10px 0 10px 20px;
+}
+.img-left {
+    float: left;
+    padding: 5px;
+    border: 2px solid $teal;
+    margin: 10px 20px 10px 0;
+}
+
+.img-center {
+    display:block;
+    padding: 5px;
+    border: 2px solid $teal;
+    margin: 20px auto;
+}
 
 /* responsive images */
 img {
@@ -165,6 +184,7 @@ a, a:hover, a:active, a:visited {
     color: $blue;
 }
 
+
 aside[role="complementary"]{
     background-color: $blue;
     
@@ -196,6 +216,39 @@ aside[role="complementary"]{
     & article:last-child {
         width: 100%;
     }
+}
+
+#additional-elements {
+    & h2 {
+        color: $teal;
+        text-transform: uppercase;
+    }
+    & h3 {
+        color: $blue;
+        text-transform: uppercase;
+    }
+ & table {
+    width: 100%;
+    border-collapse: collapse;
+
+    & th {
+        background-color: $blue;
+        color: $black;
+        padding: 6px;
+        width: 33.3%;
+    }
+    & tr:nth-child(even) {
+        background: $darkgray;
+    }
+    & td {
+        border: 1px solid $blue;
+        padding: 3px;
+        text-align: right;
+    }
+    td:nth-child(3n+1) {
+        text-align: left;
+    }
+  }
 }
 
 #colophon {
