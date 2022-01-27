@@ -34,7 +34,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
-  top: 10vh;
+  top: 5vh;
   height: 80vh;
   width: 90vw;
   border-top: 2px solid rgba(12, 110, 117, 0.2);
@@ -52,11 +52,12 @@ h1 {
   font-size: 1em;
   margin: 0;
   padding: 10px;
+  height: 570px;
   display: grid;
-  grid-template-rows: 75px;
+  grid-template-rows: [header] 75px;
   grid-auto-rows: 200px;
   grid-template-columns: 1fr 2fr;
-  grid-template-areas: "header header" "sidebar main" "sidebar content" "footer footer";
+  grid-template-areas: "header header" "sidebar main" "content content" "footer footer";
   grid-gap: 5px;
 }
 
@@ -104,12 +105,17 @@ header {
   overflow: auto;
   grid-area: content;
 }
+.book h2 {
+  text-align: center;
+}
 
 footer {
   color: white;
   font-size: 0.8em;
   padding-left: 0.375em;
   grid-area: footer;
+  height: 75px;
+  padding-top: 25px;
 }
 
 img.theix {
