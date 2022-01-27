@@ -55,7 +55,7 @@ h1 {
   height: 570px;
   display: grid;
   grid-template-rows: [header] 75px;
-  grid-auto-rows: 200px;
+  grid-auto-rows: 227px;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "header header" "sidebar main" "content content" "footer footer";
   grid-gap: 5px;
@@ -115,7 +115,7 @@ footer {
   padding-left: 0.375em;
   grid-area: footer;
   height: 75px;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 img.theix {
