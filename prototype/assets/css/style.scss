@@ -65,10 +65,10 @@ padding-left: 0.375em;
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
   "header header"
-  "sidebar main"
-  "content content"
+  "sidebar content"
+  "main content"
   "footer footer";
-  grid-gap: 5px;
+  grid-gap: 10px;
   }
 
     

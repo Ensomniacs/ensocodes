@@ -57,8 +57,8 @@ h1 {
   grid-template-rows: [header] 75px;
   grid-auto-rows: 227px;
   grid-template-columns: 1fr 2fr;
-  grid-template-areas: "header header" "sidebar main" "content content" "footer footer";
-  grid-gap: 5px;
+  grid-template-areas: "header header" "sidebar content" "main content" "footer footer";
+  grid-gap: 10px;
 }
 
 h1 {
