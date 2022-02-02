@@ -1,7 +1,8 @@
 $( "#CircleForm" ).validate({
-});
-    function displayResult(){
-        if ($( "#CricleForm" ).valid()) {
+    });
+
+    function displayResults(){
+        if ($( "#CircleForm" ).valid()) {
 
             document.getElementById("diameter").innerHTML = "";
             document.getElementById("circumfrence").innerHTML = "";
