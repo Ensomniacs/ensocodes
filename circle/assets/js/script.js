@@ -7,21 +7,44 @@ $( "#CircleForm" ).validate({
             document.getElementById("circumfrence").innerHTML = "";
             document.getElementById("area").innerHTML = "";
 
-            var radius, diameter, circumfrence, area;
+            // variables
+            var radius;
+            var diameter; 
+            var diameterfp;
+            var circumfrence;
+            var circumfrencefp; 
+            var area;
+            var areafp;
+            var result;
 
-            diameter = 2 * radius;
-            circumfrence = 2 * Math.Pi * radius;
-            area = Math.Pi * (radius * radius);
+            // read radius as a string
+            radius = document.getElementById("radius").value;
 
-            //display the diameter
+            //pars float calulations
+            diameterfp = parseFloat ( diameter );
+            circumfrencefp = parseFloat ( circumfrence);
+            areafp = parseFloat ( area );
+
+            // calculations
+            diameter = calcDiameter(radius);
+            circumfrence = calcCircumfrence(radius);
+            area = calcArea(radius);
+
+            //display results as string
             document.getElementById("diameter").innerHTML = diameter.toString();
-
-            //display the circumfrence
             document.getElementById("circumfrence").innerHTML = circumfrence.toStrince();
-
-            //display the area
             document.getElementById("area").innerHTML = area.toString();
         }
+    }
+
+    function calcDiameter(radius) {
+        return 2 * radius;
+    }
+    function calcCircumfrence(radius) {
+        return 2 * Math.Pi * radius;
+    }
+    function calcArea (radius) {
+        return Math.Pi * radius * radius;
     }
 
     function clearForm() {
@@ -31,3 +54,4 @@ $( "#CircleForm" ).validate({
         document.getElementById("circumfrence").innerHTML = "";
         document.getElementById("area").innerHTML = "";
     }
+
