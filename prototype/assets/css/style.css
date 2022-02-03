@@ -34,8 +34,8 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
-  top: 5vh;
-  height: 80vh;
+  top: 20vh;
+  height: auto;
   width: 90vw;
   border-top: 2px solid rgba(12, 110, 117, 0.2);
   border-left: 1px solid rgba(12, 110, 117, 0.1);
@@ -47,7 +47,7 @@ h1 {
   text-align: left;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   color: white;
   font-size: 1em;
   margin: 0;
@@ -128,7 +128,7 @@ img.theix {
 h2 {
   font-weight: 300;
   font-size: 1.3em;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 h4 {
