@@ -93,7 +93,7 @@ nav ul li {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 3.5rem 0;
 }
 .sectionbanner {
   background: #d0d8d9;
@@ -227,14 +227,21 @@ a:hover {
 
 .footer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+  grid-auto-flow: rows;
   grid-gap: 2rem;
-  text-align: left;
   padding-top: 4rem;
   color: inherit;
+  height: 300px;
 }
 .footer p {
   color: #118c80;
+}
+
+.footer div:nth-child(4n) {
+  grid-column: span 3;
+  height: 60px;
+  padding-left: 20%;
 }
 
 .fas {
@@ -254,7 +261,7 @@ footer h3 {
 footer h4 {
   margin: 0;
   padding-top: 30px;
-  text-align: center;
+  text-align: left;
   font-size: 0.6rem;
   text-transform: uppercase;
 }

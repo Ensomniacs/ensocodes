@@ -106,7 +106,7 @@ body {
   }
 
   .section {
-    padding: 5rem 0;
+    padding: 3.5rem 0;
     
     &banner {
       background: $lightgray;
@@ -249,15 +249,21 @@ a:hover {
 
 .footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-auto-flow: rows;
     grid-gap: 2rem;
-    text-align: left;
     padding-top: 4rem;
     color: inherit;
+    height: 300px;
 
     & p {
         color: $darkteal;
     }
+  }
+  .footer div:nth-child(4n) {
+    grid-column: span 3;
+    height: 60px;
+    padding-left: 20%;
   }
   
   .fas {
@@ -278,7 +284,7 @@ footer {
     & h4 {
         margin: 0;
         padding-top: 30px;
-        text-align: center;
+        text-align: left;
         font-size: 0.6rem;
         text-transform: uppercase;
     }
