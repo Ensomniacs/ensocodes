@@ -9,9 +9,6 @@
 
 body {
   padding: 30px 10px;
-  font-family: "DM Sans", sans-serif;
-  transition: background 0.4s ease-in;
-  background-color: #090909;
   margin: 0;
 }
 
@@ -20,10 +17,11 @@ body {
   z-index: 3;
 }
 
-.container#gallery {
+.container {
   width: 900px;
   min-width: 900px;
   margin: 50px auto;
+  background-color: black;
 }
 
 .caption {
@@ -40,6 +38,10 @@ body {
   width: calc(100% - 65px);
   display: block;
   margin-top: 0;
+}
+.artpiece .arripe-icon {
+  width: 50px;
+  height: 50px;
 }
 
 .title {
@@ -70,6 +72,8 @@ body {
 
 .arripe-icon {
   margin-right: 10px;
+  width: 50px;
+  height: 50px;
 }
 
 .info-area {
@@ -343,4 +347,8 @@ body {
 .carousel__nav > label {
   border: 1px solid #090909;
   display: none;
+}
+
+iframe {
+  border: 0;
 }/*# sourceMappingURL=gallery.css.map */

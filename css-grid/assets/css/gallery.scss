@@ -203,10 +203,11 @@ body {
   }
 }
 
- #gallery {
+.container {
   width: 900px;
   min-width: 900px;
   margin: 50px auto;
+  background-color: black;
 }
 
 
@@ -224,7 +225,10 @@ body {
   width: calc(100% - 65px);
   display: block;
   margin-top: 0;
-
+  & .arripe-icon {
+    width: 50px;
+    height: 50px;
+  }
 }
   .title {
   color: #f60000;
@@ -253,6 +257,8 @@ body {
 
 .arripe-icon{ 
   margin-right: 10px;
+  width: 50px;
+  height: 50px;
 }
 
 .info-area {
@@ -274,3 +280,7 @@ body {
 }
 
 @include carousel(19);
+
+iframe {
+  border: 0;
+}
