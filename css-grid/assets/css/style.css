@@ -337,10 +337,6 @@
   display: none;
 }
 
-iframe {
-  border: 0;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -505,9 +501,10 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 490px;
+  max-width: 900px;
 }
 
+/* stylizing */
 hr {
   box-sizing: content-box;
   height: 0;
@@ -573,6 +570,8 @@ h1, .h1 {
 h2, .h2 {
   font-size: 2rem;
   text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.7rem;
 }
 
 h3, .h3 {
@@ -601,25 +600,27 @@ h6, .h6 {
   color: #A60000;
 }
 
+#about {
+  text-align: center;
+}
 #about h2 {
   letter-spacing: 0.7rem;
   font-weight: 700;
+  color: white;
+}
+#about p {
+  width: 75vw;
+  margin: auto;
 }
 
+#consume h2 {
+  color: white;
+}
 #consume h5 {
   margin-bottom: -5px;
   font-weight: 500;
   letter-spacing: 0.4rem;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 2rem;
-  letter-spacing: 0.7rem;
-  background: linear-gradient(white, rgba(255, 255, 255, 0.9), rgba(166, 0, 0, 0.9));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  border-bottom: none;
 }
 
 #replicate h4 {
@@ -697,6 +698,75 @@ hr {
   padding-top: 10px;
 }
 
+.modal.show .modal-dialog {
+  transform: none;
+}
+
+.modal.modal-static .modal-dialog {
+  transform: scale(1.02);
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background: rbga(0, 0, 0, 0.2);
+  background-clip: padding-box;
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.modal-header .close {
+  padding: 1rem 1rem;
+  margin: -1rem -1rem -1rem auto;
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+iframe {
+  border: 0;
+  width: 75%;
+}
+
+/* sections */
 @media only screen and (max-width: 600px) {
   .masthead {
     position: relative;
@@ -709,6 +779,38 @@ hr {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+  }
+
+  iframe {
+    width: 420px;
+    height: 236px;
+    margin: auto;
+  }
+
+  .consume-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 25rem;
+    padding: 15rem 0;
+    background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/consume1.webp");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  #consume .overlay {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 25rem;
+    background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/consume2.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding: 100px 50px;
   }
 }
 @media (min-width: 576px) {
@@ -834,24 +936,6 @@ hr {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.jumbotron {
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
-  background-color: #e9ecef;
-  border-radius: 0.3rem;
-}
-
-@media (min-width: 576px) {
-  .jumbotron {
-    padding: 4rem 2rem;
-  }
-}
-.jumbotron-fluid {
-  padding-right: 0;
-  padding-left: 0;
-  border-radius: 0;
-}
-
 .close {
   float: right;
   font-size: 1.5rem;
@@ -911,69 +995,6 @@ button.close {
     transition: none;
   }
 }
-.modal.show .modal-dialog {
-  transform: none;
-}
-
-.modal.modal-static .modal-dialog {
-  transform: scale(1.02);
-}
-
-.modal-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  pointer-events: auto;
-  background: rbga(0, 0, 0, 0.2);
-  background-clip: padding-box;
-  border-radius: 0.3rem;
-  outline: 0;
-}
-
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1040;
-  width: 100vw;
-  height: 100vh;
-  background-color: #000000;
-}
-
-.modal-backdrop.fade {
-  opacity: 0;
-}
-
-.modal-backdrop.show {
-  opacity: 0.5;
-}
-
-.modal-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-  border-top-left-radius: calc(0.3rem - 1px);
-  border-top-right-radius: calc(0.3rem - 1px);
-}
-
-.modal-header .close {
-  padding: 1rem 1rem;
-  margin: -1rem -1rem -1rem auto;
-}
-
-.modal-title {
-  margin-bottom: 0;
-  line-height: 1.5;
-}
-
-.modal-body {
-  position: relative;
-  flex: 1 1 auto;
-  padding: 1rem;
-}
-
 @media (min-width: 786px) {
   .masthead h1 {
     font-size: 4rem;
@@ -984,8 +1005,9 @@ button.close {
     position: relative;
     width: 100%;
     height: auto;
-    min-height: 35rem;
+    min-height: 45rem;
     padding: 15rem 0;
+    background: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/SotP-Masthead.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -1017,6 +1039,7 @@ button.close {
     height: auto;
     min-height: 45rem;
     padding: 15rem 0;
+    background: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/Aksis132.webp");
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -1038,18 +1061,6 @@ button.close {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-  }
-
-  #consume overlay {
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-height: 25rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    padding: 100px 50px;
   }
 }
 @media (min-width: 992px) {
@@ -1283,9 +1294,9 @@ button.close {
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 45rem;
-  padding: 15rem 0;
-  background: #DE3E3E;
+  min-height: 25rem;
+  padding: 13rem 0 5rem 0;
+  background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/Aksis132Mobile.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -1294,4 +1305,13 @@ button.close {
 }
 .about-section p {
   margin-bottom: 5rem;
+}
+.about-section h5 {
+  width: 20%;
+  margin: auto;
+  border-bottom: 1px solid #f60000;
+}
+
+.cta {
+  padding-top: 80%;
 }/*# sourceMappingURL=style.css.map */
