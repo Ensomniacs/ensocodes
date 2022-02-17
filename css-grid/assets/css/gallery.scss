@@ -8,12 +8,6 @@
   -moz-box-sizing: border-box;
 }
 
-
-body {
-  padding: 30px 10px;
-  margin: 0;
-}
-
 %animation-default {
   opacity: 1 !important;
   z-index: 3;
@@ -201,13 +195,6 @@ body {
       }
     }
   }
-}
-
-.container {
-  width: 900px;
-  min-width: 900px;
-  margin: 50px auto;
-  background-color: black;
 }
 
 

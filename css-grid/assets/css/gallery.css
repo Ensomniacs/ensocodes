@@ -7,21 +7,9 @@
   -moz-box-sizing: border-box;
 }
 
-body {
-  padding: 30px 10px;
-  margin: 0;
-}
-
 .carousel > input[type=radio]:nth-child(19):checked ~ .carousel__next > label:nth-child(1), .carousel > input[type=radio]:nth-child(19):checked ~ .carousel__prev > label:nth-child(18), .carousel > input[type=radio]:nth-child(18):checked ~ .carousel__next > label:nth-child(19), .carousel > input[type=radio]:nth-child(18):checked ~ .carousel__prev > label:nth-child(17), .carousel > input[type=radio]:nth-child(17):checked ~ .carousel__next > label:nth-child(18), .carousel > input[type=radio]:nth-child(17):checked ~ .carousel__prev > label:nth-child(16), .carousel > input[type=radio]:nth-child(16):checked ~ .carousel__next > label:nth-child(17), .carousel > input[type=radio]:nth-child(16):checked ~ .carousel__prev > label:nth-child(15), .carousel > input[type=radio]:nth-child(15):checked ~ .carousel__next > label:nth-child(16), .carousel > input[type=radio]:nth-child(15):checked ~ .carousel__prev > label:nth-child(14), .carousel > input[type=radio]:nth-child(14):checked ~ .carousel__next > label:nth-child(15), .carousel > input[type=radio]:nth-child(14):checked ~ .carousel__prev > label:nth-child(13), .carousel > input[type=radio]:nth-child(13):checked ~ .carousel__next > label:nth-child(14), .carousel > input[type=radio]:nth-child(13):checked ~ .carousel__prev > label:nth-child(12), .carousel > input[type=radio]:nth-child(12):checked ~ .carousel__next > label:nth-child(13), .carousel > input[type=radio]:nth-child(12):checked ~ .carousel__prev > label:nth-child(11), .carousel > input[type=radio]:nth-child(11):checked ~ .carousel__next > label:nth-child(12), .carousel > input[type=radio]:nth-child(11):checked ~ .carousel__prev > label:nth-child(10), .carousel > input[type=radio]:nth-child(10):checked ~ .carousel__next > label:nth-child(11), .carousel > input[type=radio]:nth-child(10):checked ~ .carousel__prev > label:nth-child(9), .carousel > input[type=radio]:nth-child(9):checked ~ .carousel__next > label:nth-child(10), .carousel > input[type=radio]:nth-child(9):checked ~ .carousel__prev > label:nth-child(8), .carousel > input[type=radio]:nth-child(8):checked ~ .carousel__next > label:nth-child(9), .carousel > input[type=radio]:nth-child(8):checked ~ .carousel__prev > label:nth-child(7), .carousel > input[type=radio]:nth-child(7):checked ~ .carousel__next > label:nth-child(8), .carousel > input[type=radio]:nth-child(7):checked ~ .carousel__prev > label:nth-child(6), .carousel > input[type=radio]:nth-child(6):checked ~ .carousel__next > label:nth-child(7), .carousel > input[type=radio]:nth-child(6):checked ~ .carousel__prev > label:nth-child(5), .carousel > input[type=radio]:nth-child(5):checked ~ .carousel__next > label:nth-child(6), .carousel > input[type=radio]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .carousel > input[type=radio]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .carousel > input[type=radio]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .carousel > input[type=radio]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .carousel > input[type=radio]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .carousel > input[type=radio]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .carousel > input[type=radio]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .carousel > input[type=radio]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .carousel > input[type=radio]:nth-child(1):checked ~ .carousel__prev > label:nth-child(19) {
   opacity: 1 !important;
   z-index: 3;
-}
-
-.container {
-  width: 900px;
-  min-width: 900px;
-  margin: 50px auto;
-  background-color: black;
 }
 
 .caption {
