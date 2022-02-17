@@ -96,8 +96,9 @@
   <!-- ../initiate-protocol/consume.exe -->
   <h5>..// initiate protocol</h5>
   <h2>Consume...</h2>
-  <p>Dormant SIVA Caches across the system are beginning to awaken from the Plaguelands, to the Exodus Black, and Europa. Contain the outbreak in the new 12-Player Seasonal Activity: “Containment Breach”, to quell the tide of the enemies of humanity as Caiatl’s Blue Legion and House Salvation march to claim SIVA for themselves. Learn to wield SIVA through research with Ana Bray, and by collecting SIVA caches through Containment Breach.</p>
-    </div>
+  <p>Dormant SIVA Caches across the system are beginning to awaken from the Plaguelands, to the Exodus Black, and Europa. Contain the outbreak in the new 12-Player Seasonal Activity: <strong>“Containment Breach”</strong>, to quell the tide of the enemies of humanity as Caiatl’s Blue Legion and House Salvation march to claim SIVA for themselves.</p> 
+  <p>Learn to wield SIVA through research with Ana Bray, and by collecting SIVA caches through Containment Breach.</p>
+  </div>
   </div>
 </section>
               
@@ -108,71 +109,65 @@
   <h2>/Infect...</h2>
   <h6>you cannot escape</h6>
   <p>Enemies of humanity from all edges of the system have been exposed to SIVA. Face them on the battlefield in Containment Breach.</p>
-<!-- Gallery -->
-<div class="gallery-container section-container">
-          <div class="hover hover-gallery rounded" data-toggle="modal" data-target="#myModal">
-              <img src="https://ensomniacs.github.io/seasonoftheplague/assets/img/thumbnails/Screevathumb.webp" alt="Image 1" data-target="#myCarousel" data-slide-to="0">
-           </div>
-          <div class="hover hover-gallery rounded" data-toggle="modal" data-target="#myModal">
-              <img src="https://ensomniacs.github.io/seasonoftheplague/assets/img/thumbnails/heavyframesthumbs.webp" alt="Image 2" data-target="#myCarousel" data-slide-to="1">
-           </div>
-          <div class="hover hover-gallery rounded" data-toggle="modal" data-target="#myModal">
-              <img src="https://ensomniacs.github.io/seasonoftheplague/assets/img/thumbnails/MENACE1SXThumb.webp" alt="Image 3" data-target="#myCarousel" data-slide-to="2">
-          </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-              </button>
-          </div>
-          <div class="modal-body">
 
-              <!-- Carousel -->
-   <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/Screeva2.webp" class="thumb" alt="Image 1">
-          </div>
-          <div class="carousel-item">
-            <img src="https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/heavyframes.webp" class="thumb" alt="Image 2">
-          </div>
-          <div class="carousel-item">
-            <img src="https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/MENACE1SX.webp" class="thumb" alt="Image 3">
-          </div>
-          <div class="carousel-item">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/q4vFrVVhEYM" allowfullscreen></iframe>
-              </div>
-          </div>
-          <div class="carousel-item">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/78IKtOsou7k" allowfullscreen></iframe>
-              </div>
-          </div>
-          <div class="carousel-item">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qF8qCN4t2VU" allowfullscreen></iframe>
-              </div>
-          </div>
-          <div class="carousel-item">
-              <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uxPY6UkecGg" allowfullscreen></iframe>
-              </div>
-          </div>
-        </div>
-      </div>
+<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/Screeva2.webp" onclick="openModal();currentSlide(1)" class="hover-shadow img-modal">
+  </div>
+  <div class="column">
+    <img src="https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/heavyframes.webp" onclick="openModal();currentSlide(2)" class="hover-shadow img-modal">
+  </div>
+  <div class="column">
+    <img src="https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/MENACE1SX.webp" onclick="openModal();currentSlide(3)" class="hover-shadow img-modal">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/Screeva2.webp" class="img-modal-expand">
     </div>
-    <div class="modal-footer">
-      <button type="button" class="btn-close" data-dismiss="modal">Close</button>
-      </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/heavyframes.webp" class="img-modal-expand">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/MENACE1SX.webp" class="img-modal-expand">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo img-modal" src="https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/Screeva2.webp" onclick="currentSlide(1)" alt="Screeva by 3-XN">
+    </div>
+
+    <div class="column">
+      <img class="demo img-modal" src="https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/heavyframes.webp" onclick="currentSlide(2)" alt="Heavy Attack Frames by Delta Designs">
+    </div>
+
+    <div class="column">
+      <img class="demo img-modal" src="https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/MENACE1SX.webp" onclick="currentSlide(3)" alt="Menace: Concept by Moira, Render by SierraX">
     </div>
   </div>
 </div>
-</div>
+
+
 </section>
       <!-- Signal Received -->
 <section class="replicate-section" id="replicate">
@@ -656,6 +651,7 @@
 
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
       <script src="assets/js/menu.js"></script>
+      <script src="assets/js/modal.js"></script>
 </div>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 </body>

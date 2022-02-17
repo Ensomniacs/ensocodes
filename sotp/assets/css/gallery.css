@@ -335,4 +335,9 @@
 .carousel__nav > label {
   border: 1px solid #090909;
   display: none;
+}
+
+.img-350 {
+  width: 350px;
+  height: 350px;
 }/*# sourceMappingURL=gallery.css.map */
