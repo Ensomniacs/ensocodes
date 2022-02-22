@@ -84,6 +84,18 @@ svg {
   overflow: hidden;
   vertical-align: middle;
 }
+a.svg {
+  position: relative;
+  display: inline-block; 
+}
+a.svg:after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+}
 
 img {
   vertical-align: middle;
@@ -186,6 +198,7 @@ h6, .h6 {
   letter-spacing: 0.4rem;
   color: $red;
 }
+
 #replicate h3 {
   font-size: 0.75rem;
   margin-bottom: -5px;
@@ -253,6 +266,12 @@ iframe {
   margin: auto;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
 
 .card {
   position: relative;
@@ -292,7 +311,31 @@ iframe {
   margin: 0 auto;
 }
 
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 45rem;
+  padding: 15rem 0;
+  background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/Sotp-MastMobile.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 
+.masthead2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 45rem;
+  padding: 15rem 0;
+  background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/agteam375.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 
   /* sections */
   @media only screen and (max-width: 340){
@@ -323,17 +366,8 @@ iframe {
   }
 
   @media only screen and (min-width: 339.98px) and (max-width: 570px){
-    .masthead {
-      position: relative;
-      width: 100%;
-      height: auto;
-      min-height: 45rem;
-      padding: 15rem 0;
-      background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/Sotp-MastMobile.jpg");
-      background-position: top;
-      background-repeat: no-repeat;
-      background-attachment: scroll;
-      background-size: cover;
+    .max-height {
+      height: 100%;
     }
     iframe {
       width: 390px;
@@ -401,15 +435,30 @@ iframe {
       font-size: 1.6rem;
     }
     h6 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     p {
       font-size: 1.3rem;
     }
 
+
+    #replicate {
+      & h2 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: -10px;
+      }
+      & h4 {
+        font-size: 1.2rem;
+      }
+      & h6 {
+      text-align: right;
+      font-size: 1rem;
+      }
+     }
   }
 
-@media (min-width: 576px) {
+@media (min-width: 573.1px) {
   .card {
     margin-left:1.5rem;
 }
@@ -425,6 +474,21 @@ iframe {
     margin-bottom: 0;
     margin-left: 0.75rem;
   }
+
+  #replicate {
+    & h2 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: -10px;
+    }
+    & h4 {
+      font-size: 1.2rem;
+    }
+    & h6 {
+    padding-right: 250px;
+    font-size: 1rem;
+    }
+   }
 }
 
 
@@ -486,16 +550,6 @@ iframe {
 }
 }
 
-@media (max-width: 767.98px) {
-}
-@media (min-width: 768px) {
-}
-@media (max-width: 991.98px) {
-
-}
-@media (min-width: 992px) {
-}
-
 .accordion {
   overflow-anchor: none;
 }
@@ -543,30 +597,36 @@ button.close {
     line-height: 4rem;
   }
   
-  .masthead {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 45rem;
-  padding: 15rem 0;
-  background: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/SotP-Masthead.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
+  .max-height {
+    height: 750px;
+  } 
 
-.masthead2 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 45rem;
-  padding: 15rem 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
+  .masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/SotP-Masthead.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  .masthead2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 45rem;
+    padding: 15rem 0;
+    background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/agteam768.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
 .masthead2 h2 {
   max-width: 45rem;
   font-size: 1.5rem;
@@ -654,11 +714,11 @@ button.close {
      }
    }
 }
-  .masthead {
-    height: 100vh;
-    padding: 0;
-    background-position: center;
-  }
+.masthead {
+  height: 1140px;
+  padding: 0;
+  background-position: center;
+}
   .masthead h1 {
     font-size: 4.5rem;
     line-height: 4.5rem;
@@ -683,7 +743,17 @@ button.close {
 
 }
 @media (min-width: 1200px) {
-
+  .masthead {
+    height: 100%!important;
+    position: relative;
+    min-height: 45rem;
+    padding: 15rem 0;
+    background: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/SotP-Masthead.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
   .text-body {
     color: #212529 !important;
   }

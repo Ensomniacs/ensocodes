@@ -272,3 +272,10 @@
   width:350px;
   height: 350px;
 }
+
+@media only screen and (min-width: 576px){
+  .img-350 {
+    width: 285px;
+    height: 285px
+  }
+}
