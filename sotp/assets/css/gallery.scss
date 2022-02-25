@@ -124,7 +124,7 @@
         width: 40px;
         height: 40px;
         position: absolute;
-        top: 50%;
+        top: 45%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         transition: all .3s ease;
@@ -158,7 +158,7 @@
 
     &__prev {
       > label {
-        left: 2%;
+        left: 3.4%;
 
         &:before {
           left: 35%;
@@ -171,7 +171,7 @@
 
     &__next {
       > label {
-        right: 2%;
+        right: 3.4%;
 
         &:before {
           left: 10%;
@@ -259,8 +259,12 @@
 .reed600 {
   height: 511px;
   object-fit: contain;
-  object-position: 100% 80%;
+  object-position: 100% 25%;
 }
+.reed-caption {
+  margin-top: -10%;
+}
+
 .blue600 {
   height: 511px;
   object-fit: contain;

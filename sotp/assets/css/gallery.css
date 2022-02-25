@@ -76,8 +76,12 @@
   height: 511px;
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: 100% 80%;
-     object-position: 100% 80%;
+  -o-object-position: 100% 25%;
+     object-position: 100% 25%;
+}
+
+.reed-caption {
+  margin-top: -10%;
 }
 
 .blue600 {
@@ -283,7 +287,7 @@
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transition: all 0.3s ease;
@@ -308,7 +312,7 @@
   top: 20%;
 }
 .carousel__prev > label {
-  left: 2%;
+  left: 3.4%;
 }
 .carousel__prev > label:before {
   left: 35%;
@@ -317,7 +321,7 @@
   -webkit-transform: rotate(135deg);
 }
 .carousel__next > label {
-  right: 2%;
+  right: 3.4%;
 }
 .carousel__next > label:before {
   left: 10%;
