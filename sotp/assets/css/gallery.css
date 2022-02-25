@@ -55,7 +55,6 @@
   line-height: 16px;
   color: #a5a5a5;
   font-weight: 500;
-  margin-left: auto;
 }
 
 .arripe-icon {
@@ -65,7 +64,7 @@
 }
 
 .info-area {
-  width: 100%;
+  width: 90%;
   position: absolute;
   top: 0;
   left: 60px;
@@ -91,6 +90,7 @@
 }
 
 .carousel {
+  margin-top: -5px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -346,6 +346,121 @@
   height: 350px;
 }
 
+@media only screen and (max-width: 360.1px) {
+  .reed600 {
+    height: 168px !important;
+    -o-object-position: 100% 60%;
+       object-position: 100% 60%;
+  }
+
+  .reed-caption {
+    margin-top: 5%;
+  }
+
+  .arripe-icon {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .sub-line {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .credit {
+    font-size: 12px;
+    line-height: 16px;
+    color: #a5a5a5;
+    font-weight: 500;
+    margin-right: auto;
+  }
+
+  .carousel__items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  .carousel__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+  }
+  .carousel__item img {
+    width: 100%;
+    vertical-align: middle;
+  }
+  .carousel__prev > label, .carousel__next > label {
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    opacity: 0;
+    z-index: 2;
+  }
+  .carousel__prev > label:hover, .carousel__prev > label:focus, .carousel__next > label:hover, .carousel__next > label:focus {
+    opacity: 0.5 !important;
+    color: #f60000;
+  }
+  .carousel__prev > label:before, .carousel__prev > label:after, .carousel__next > label:before, .carousel__next > label:after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+  }
+  .carousel__prev > label:before, .carousel__next > label:before {
+    background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+    width: 60%;
+    height: 60%;
+    top: 20%;
+  }
+  .carousel__prev > label {
+    left: 3.4%;
+  }
+  .carousel__prev > label:before {
+    left: 35%;
+    top: 20%;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  .carousel__next > label {
+    right: 3.4%;
+  }
+  .carousel__next > label:before {
+    left: 10%;
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+  }
+  .carousel__nav {
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 3;
+  }
+  .carousel__nav > label {
+    border: 1px solid #090909;
+    display: none;
+  }
+}
 @media only screen and (min-width: 576px) {
   .img-350 {
     width: 285px;

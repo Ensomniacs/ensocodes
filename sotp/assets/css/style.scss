@@ -157,7 +157,7 @@ h6, .h6 {
   text-align: center;
 
   & h2 {
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.5rem;
   font-weight: 700;
   color: white;
   }
@@ -269,8 +269,8 @@ iframe {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -0.75rem;
-  margin-left: -0.75rem;
+  margin-right: .25rem;
+  margin-left: 0.33rem;
 }
 
 .card {
@@ -338,7 +338,7 @@ iframe {
 }
 
   /* sections */
-  @media only screen and (max-width: 360){
+  @media only screen and (max-width: 361px){
     iframe {
       width: 300px;
       height: 169px;
@@ -363,9 +363,48 @@ iframe {
     p {
       font-size: 1.2.5rem;
     }
+
+    .consume-section {
+      position: relative;
+      width: 100%;
+      height: auto;
+      min-height: 25rem;
+      padding: 15rem 0;
+      background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/consume1.webp");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-size: cover;
+    }
+    #consume .overlay {
+      position: relative;
+      width: 100%;
+      height: auto;
+      min-height: 25rem;
+      background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/consume2.webp");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-size: cover;
+      padding: 100px 50px;
+    }
+    #replicate {
+      & h2 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: -10px;
+      }
+      & h4 {
+        font-size: 1.2rem;
+      }
+      & h6 {
+      text-align: right;
+      font-size: 1rem;
+      }
+    }
   }
 
-  @media only screen and (min-width: 359.98px) and (max-width: 570px){
+  @media only screen and (min-width:360.98px) and (max-width: 570px){
     .max-height {
       height: 100%;
     }
@@ -423,16 +462,16 @@ iframe {
       font-size: 3rem;
     }
     h2 {
-      font-size: 2rem;
+      font-size: 1.95rem;
     }
     h3 {
-      font-size: 1.95rem;
+      font-size: 1.9rem;
     }
     h4 {
       font-size: 1.8rem;
     }
     h5 {
-      font-size: 1.6rem;
+      font-size: 0.8rem;
     }
     h6 {
       font-size: 1.1rem;
@@ -455,6 +494,18 @@ iframe {
       text-align: right;
       font-size: 1rem;
       }
+     }
+     #enhance {
+       & h2 {
+         text-align: center;
+         margin-top: 0;
+         margin-bottom: -10px;
+       }
+       & h6 {
+         text-align: center;
+         font-size: 0.8rem;
+         padding-left: 5%;
+       }
      }
   }
 

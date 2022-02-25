@@ -1,5 +1,5 @@
 .row-padding, .row-padding > .half, .row-padding > .third, .row-padding > .twothird, .row-padding > .threequarter, .row-padding > .quarter, .row-padding > .col {
-  padding: 0 8px;
+  padding: 8px;
 }
 
 .modal-container:after, .modal-container:before, .row:after, .row:before, .row-padding:after, .row-padding:before {
