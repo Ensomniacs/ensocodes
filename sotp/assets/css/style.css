@@ -1085,6 +1085,33 @@ iframe {
   background-size: cover;
 }
 
+.about-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 25rem;
+  padding: 13rem 0 5rem 0;
+  background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/Aksis132Mobile.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  border-top: 7px solid rgba(255, 255, 255, 0.9);
+}
+.about-section p {
+  margin-bottom: 5rem;
+}
+.about-section h5 {
+  margin: auto;
+  border-bottom: 2px solid #f60000;
+  padding-bottom: -5px;
+  margin-bottom: 80px;
+}
+
+.cta {
+  padding-top: 80%;
+}
+
 /* sections */
 @media only screen and (max-width: 361px) {
   iframe {
@@ -1192,10 +1219,6 @@ iframe {
     height: 297px;
     margin: auto;
     padding-top: 1.5rem;
-  }
-  iframe .feature {
-    width: 540px;
-    height: 303px;
   }
 
   .consume-section {
@@ -1366,24 +1389,6 @@ iframe {
     transition: none;
   }
 }
-@media (min-width: 1200px) {
-  .nav {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-  }
-
-  .nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
-  }
-
-  .nav-link:hover, .nav-link:focus {
-    text-decoration: none;
-  }
-}
 .accordion {
   overflow-anchor: none;
 }
@@ -1435,6 +1440,20 @@ button.close {
   }
 }
 @media (min-width: 786px) {
+  .cta {
+    padding-top: 20%;
+    width: 55vw;
+    margin-left: auto;
+    align-items: right;
+    padding-right: 40px;
+  }
+
+  iframe {
+    height: 207px;
+    margin: auto;
+    padding-top: 1.5rem;
+  }
+
   .masthead h1 {
     font-size: 4rem;
     line-height: 4rem;
@@ -1555,9 +1574,15 @@ button.close {
   }
 
   .masthead {
-    height: 1140px;
-    padding: 0;
-    background-position: center;
+    height: 100% !important;
+    position: relative;
+    min-height: 45rem;
+    padding: 15rem 0;
+    background: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/SotP-Masthead.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
   }
 
   .masthead h1 {
@@ -1587,6 +1612,20 @@ button.close {
   #about p {
     max-width: 900px;
   }
+
+  .about-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 45rem;
+    padding: 15rem 0;
+    background: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/Aksis132.webp");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    border-top: 7px solid rgba(255, 255, 255, 0.9);
+  }
 }
 @media (min-width: 1200px) {
   .masthead {
@@ -1599,6 +1638,20 @@ button.close {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+  }
+
+  .about-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 45rem;
+    padding: 15rem 0;
+    background: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/Aksis132.webp");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    border-top: 7px solid rgba(255, 255, 255, 0.9);
   }
 
   .text-body {
@@ -1639,6 +1692,24 @@ button.close {
     color: white;
     background-color: #40000b;
     font-weight: 700;
+  }
+}
+@media (min-width: 1200px) {
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-link:hover, .nav-link:focus {
+    text-decoration: none;
   }
 }
 .infect-section {
@@ -1732,31 +1803,4 @@ button.close {
   letter-spacing: 0.5rem;
   font-weight: 700;
   padding-top: 10rem;
-}
-
-.about-section {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 25rem;
-  padding: 13rem 0 5rem 0;
-  background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/Aksis132Mobile.webp");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  border-top: 7px solid rgba(255, 255, 255, 0.9);
-}
-.about-section p {
-  margin-bottom: 5rem;
-}
-.about-section h5 {
-  margin: auto;
-  border-bottom: 2px solid #f60000;
-  padding-bottom: -5px;
-  margin-bottom: 80px;
-}
-
-.cta {
-  padding-top: 80%;
 }/*# sourceMappingURL=style.css.map */
