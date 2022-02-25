@@ -59,11 +59,11 @@ ul a:hover {
   text-decoration: none;
 }
 
-ul li {
+.primary li {
   padding: 30px 10px;
   border-bottom: 2px solid #40000b;
 }
-ul li:hover {
+.primary li:hover {
   border-bottom: 2px solid #f60000;
 }
 
@@ -98,7 +98,8 @@ ul li:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 7%;
+  margin-top: -2%;
+  padding-top: 7%;
 }
 
 .mobile-menu {
@@ -114,6 +115,11 @@ ul li:hover {
   background-color: #40000b;
   width: 100%;
   text-align: center;
+  padding: 30px 10px;
+  border-bottom: 2px solid #40000b;
+}
+.mobile-menu li:hover {
+  border-bottom: 2px solid #f60000;
 }
 
 .sticky {

@@ -55,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
+  padding-top: 10px;
   margin-bottom: 1rem;
 }
 
@@ -162,7 +163,6 @@ h6, .h6 {
   color: white;
   }
   & p {
-    width: 75vw;
     margin: auto;
   }
 }
@@ -258,12 +258,16 @@ hr {
 
 iframe {
   border: 0;
-  width: 75%;
+  width: 100%;
 }
 
 .img-modal {
   width: 360px;
   margin: auto;
+}
+
+.contact-section, footer {
+  background: $black;
 }
 
 .row {
@@ -361,7 +365,7 @@ iframe {
       font-size: 1.5rem;
     }
     p {
-      font-size: 1.2.5rem;
+      font-size: 0.95rem;
     }
 
     .consume-section {
@@ -388,18 +392,44 @@ iframe {
       background-size: cover;
       padding: 100px 50px;
     }
+    h2 {
+      text-align: center;
+      margin-bottom: -5px;
+    }
     #replicate {
       & h2 {
-        text-align: center;
         margin-top: 0;
-        margin-bottom: -10px;
       }
       & h4 {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
       }
       & h6 {
+      font-size: 0.75rem;
       text-align: right;
-      font-size: 1rem;
+      padding-top: 5px;
+      }
+    }
+    #consume {
+      & h5 {
+        font-size: 1.2rem;
+      }
+      & p {
+        font-size: 1rem;
+      }
+    }
+    #infect {
+      & h6 {
+        font-size: 0.9rem;
+        text-align: right;
+      }
+    }
+    .enhance-section {
+      padding-bottom: 0!important;
+    }
+    #enhance {
+      &h6 {
+        font-size: 0.9rem;
+        text-align: right;
       }
     }
   }
@@ -409,11 +439,16 @@ iframe {
       height: 100%;
     }
     iframe {
-      width: 390px;
-      height: 219px;
+      width: 75% !important;
+      height: 297px;
       margin: auto;
       padding-top: 1.5rem;
+      & .feature {
+        width: 540px;
+        height: 303px;
+      }
     }
+
     .consume-section {
       position: relative;
       width: 100%;
@@ -436,7 +471,7 @@ iframe {
       background-repeat: no-repeat;
       background-attachment: scroll;
       background-size: cover;
-      padding: 100px 50px;
+      padding: 100px 25px;
     }
     .infect-section {
         & h6 {
@@ -641,6 +676,11 @@ button.close {
   border: 0;
 }
 
+@media (min-width: 570px){
+  .max-height {
+    height: 750px;
+  }
+}
 
 @media (min-width: 786px) {
   .masthead h1 {
@@ -649,7 +689,7 @@ button.close {
   }
   
   .max-height {
-    height: 750px;
+    height: 800px;
   } 
 
   .masthead {
@@ -791,7 +831,9 @@ button.close {
   background-attachment: scroll;
   background-size: cover;
 }
-
+  #about p {
+    max-width: 900px;
+  }
 }
 @media (min-width: 1200px) {
   .masthead {
@@ -863,16 +905,17 @@ button.close {
 
 .replicate-section {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0,1));
-  padding-bottom: 3rem;
-  padding-top: 5rem;
+  padding: 75px 15px;
   border-bottom: 3px solid #fd0000;
 }
 
 .enhance-section {
-  padding-top: 3rem;
-  padding-bottom: 5rem;
+  padding: 75px 15px;
+  background: linear-gradient(black, $black);
 }
-
+.eliminate-section {
+  background: $black;
+}
 
 @supports (position: sticky) {
   .sticky-top {
@@ -901,7 +944,7 @@ button.close {
   width: 100%;
   height: auto;
   min-height: 45rem;
-  padding: 15rem 0;
+  padding: 8rem 0;
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;

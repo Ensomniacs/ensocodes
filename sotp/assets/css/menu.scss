@@ -60,13 +60,14 @@ ul a {
 }
 }
 
-ul li {
+.primary li {
   padding: 30px 10px;
   border-bottom: 2px solid #40000b;
   &:hover {
     border-bottom: 2px solid #f60000;
   }
 }
+
 
 #hamburger-icon {
   margin: auto 0;
@@ -101,7 +102,8 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 7%;
+  margin-top: -2%;
+  padding-top: 7%;
 }
 
 .mobile-menu {
@@ -111,13 +113,20 @@ ul li {
   left: 0;
   height: calc(100vh - 50px);
   width: 100%;
+  
 }
 
 .mobile-menu li {
   background-color: #40000b;
   width: 100%;
   text-align: center;
-}
+  padding: 30px 10px;
+  border-bottom: 2px solid #40000b;
+    &:hover {
+      border-bottom: 2px solid #f60000;
+    }
+  }
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
