@@ -778,7 +778,7 @@ h6, .h6 {
   text-align: center;
 }
 #about h2 {
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.7rem;
   font-weight: 700;
   color: white;
 }
@@ -954,7 +954,7 @@ iframe {
 }
 
 /* sections */
-@media only screen and (max-width: 340) {
+@media only screen and (max-width: 360) {
   iframe {
     width: 300px;
     height: 169px;
@@ -967,26 +967,26 @@ iframe {
   }
 
   h2 {
-    font-size: 2.3rem;
+    font-size: 1.95rem;
   }
 
   h3 {
-    font-size: 2.1rem;
+    font-size: 1.85rem;
   }
 
   h4 {
-    font-size: 1.9rem;
+    font-size: 1.75rem;
   }
 
   h5 {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
   }
 
   p {
-    font-size: 1.05rem;
+    font-size: 1.2 0.5rem;
   }
 }
-@media only screen and (min-width: 339.98px) and (max-width: 570px) {
+@media only screen and (min-width: 359.98px) and (max-width: 570px) {
   .max-height {
     height: 100%;
   }
@@ -1048,11 +1048,11 @@ iframe {
   }
 
   h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.95rem;
   }
 
   h4 {
@@ -1060,7 +1060,7 @@ iframe {
   }
 
   h5 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 
   h6 {
