@@ -2,6 +2,7 @@
 @import 'gallery';
 @import 'menu';
 @import 'modal';
+@import 'contact';
 
 $brightred: #DE3E3E;
 $vred: #f60000;
@@ -606,7 +607,14 @@ iframe {
     p {
       font-size: 1.2rem;
     }
-
+#eliminate, #enhance {
+  & h2 {
+    text-align: center;
+  }
+  & h6 {
+    text-align: center;
+  }
+}
     #replicate {
       & h2 {
         margin-bottom: -5px;
@@ -639,23 +647,6 @@ iframe {
 
 
 @media (min-width: 570px) {
-  .card {
-    margin-left:1.5rem;
-    flex-direction: column;
-    justify-content: space-between;
-}
-  .card-deck {
-    display: flex;
-    flex-flow: row wrap;
-    margin-right: -0.75rem;
-    margin-left: -0.75rem;
-  }
-  .card-deck .card {
-    flex: 1 0 50%;
-    margin-right: 0.75rem;
-    margin-bottom: 0;
-    margin-left: 0.75rem;
-  }
 
   #replicate {
     & h2 {
@@ -773,8 +764,7 @@ button.close {
 }
 
 
-@media only screen and (min-width: 570px) and (max-width: 800px)
-{
+@media only screen and (min-width: 570px) and (max-width: 800px) {
   .card {
     margin-left:1.5rem;
     flex-direction: column;
@@ -783,14 +773,21 @@ button.close {
   .card-deck {
     display: flex;
     flex-flow: row wrap;
-    margin-right: -0.75rem;
-    margin-left: -0.75rem;
+    margin: auto;
+    width: 320px;
   }
   .card-deck .card {
-    flex: 1 0 0%;
+    flex: 1 0 50%;
     margin-right: 0.75rem;
     margin-bottom: 0;
     margin-left: 0.75rem;
+  }
+
+  .cta {
+    padding-top: 40%;
+    width: 55vw;
+    margin: auto;
+    align-items: center;
   }
 }
 @media (min-width: 786px) {
@@ -888,6 +885,25 @@ iframe {
 }
 }
 
+@media (min-width: 801px) and (max-width: 991px) {
+  .card {
+    margin-left:1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  .card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+  }
+  .card-deck .card {
+    flex: 1 0 0%;
+    margin-right: 0.75rem;
+    margin-bottom: 0;
+    margin-left: 0.75rem;
+  }
+}
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
@@ -936,6 +952,7 @@ iframe {
        }
      }
    }
+   
 }
 .masthead {
   height: 100%!important;
@@ -993,11 +1010,29 @@ iframe {
     }
   }
 
+  .card {
+    margin-left:1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  .card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+  }
+  .card-deck .card {
+    flex: 1 0 0%;
+    margin-right: 0.75rem;
+    margin-bottom: 0;
+    margin-left: 0.75rem;
+  }
+
 iframe { 
   height: 207px;
   margin: auto;
   padding-top: 1.5rem;
-  width: 45%;
+  width: 50%;
 } 
 #featured {
   height: 450px !important;
@@ -1073,10 +1108,23 @@ iframe {
       }
     }
   }
+  .card {
+    margin-left:1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-
-@media (min-width: 1200px) {
+  .card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+  }
+  .card-deck .card {
+    flex: 1 0 0%;
+    margin-right: 0.75rem;
+    margin-bottom: 0;
+    margin-left: 0.75rem;
+  }
 
   .nav {
     display: flex;
@@ -1119,18 +1167,6 @@ iframe {
 }
 .eliminate-section {
   background: $black;
-}
-
-@supports (position: sticky) {
-  .sticky-top {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-  }
-}
-
-@media (min-width: 992px) {
-
 }
 
 .btn {

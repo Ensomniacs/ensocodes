@@ -817,6 +817,107 @@ ul a:hover {
     width: 900px;
   }
 }
+#MEM001 .card, #MEM002 .card {
+  margin-left: 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#MEM001 .card-deck, #MEM002 .card-deck {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  width: 320px;
+}
+#MEM001 .card-deck .card, #MEM002 .card-deck .card {
+  flex: 1 0 100%;
+  margin-right: 0.75rem;
+  margin-bottom: 0;
+  margin-left: 0.75rem;
+}
+#MEM001 .card-deck .card-title, #MEM002 .card-deck .card-title {
+  padding-top: 10px;
+}
+#MEM001 .img-350, #MEM002 .img-350 {
+  width: 250px;
+  height: 250px;
+}
+#MEM001 p, #MEM002 p {
+  font-size: 1rem;
+}
+#MEM001 h2, #MEM002 h2 {
+  text-align: center;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+#MEM001 h6, #MEM002 h6 {
+  letter-spacing: 0.2rem;
+  color: white;
+  text-transform: uppercase;
+}
+#MEM001 h4, #MEM002 h4 {
+  margin: 0;
+  padding-top: 10px;
+  letter-spacing: 0rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+}
+
+.team-section {
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, rgba(166, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.98) 75%, #000000 100%);
+  padding-bottom: 10rem;
+  border-top: solid 5px #DE3E3E;
+}
+
+.contact-section {
+  padding-top: 0.25rem;
+}
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #fd0000;
+}
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+.contact-section .card hr {
+  border-color: #a60000;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+.contact-section .social {
+  margin-top: 5rem;
+}
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.contact-section .social a:active {
+  color: #fff;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+  padding: 0.5rem !important;
+}
+
 *,
 *::before,
 *::after {
@@ -1418,6 +1519,13 @@ iframe {
     font-size: 1.2rem;
   }
 
+  #eliminate h2, #enhance h2 {
+    text-align: center;
+  }
+  #eliminate h6, #enhance h6 {
+    text-align: center;
+  }
+
   #replicate h2 {
     margin-bottom: -5px;
     text-align: center;
@@ -1447,26 +1555,6 @@ iframe {
   }
 }
 @media (min-width: 570px) {
-  .card {
-    margin-left: 1.5rem;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .card-deck {
-    display: flex;
-    flex-flow: row wrap;
-    margin-right: -0.75rem;
-    margin-left: -0.75rem;
-  }
-
-  .card-deck .card {
-    flex: 1 0 50%;
-    margin-right: 0.75rem;
-    margin-bottom: 0;
-    margin-left: 0.75rem;
-  }
-
   #replicate h2 {
     text-align: center;
     margin-top: 0;
@@ -1591,15 +1679,22 @@ button.close {
   .card-deck {
     display: flex;
     flex-flow: row wrap;
-    margin-right: -0.75rem;
-    margin-left: -0.75rem;
+    margin: auto;
+    width: 320px;
   }
 
   .card-deck .card {
-    flex: 1 0 0%;
+    flex: 1 0 50%;
     margin-right: 0.75rem;
     margin-bottom: 0;
     margin-left: 0.75rem;
+  }
+
+  .cta {
+    padding-top: 40%;
+    width: 55vw;
+    margin: auto;
+    align-items: center;
   }
 }
 @media (min-width: 786px) {
@@ -1691,6 +1786,27 @@ button.close {
 
   #replicate h4 {
     font-size: 0.8rem;
+  }
+}
+@media (min-width: 801px) and (max-width: 991px) {
+  .card {
+    margin-left: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+  }
+
+  .card-deck .card {
+    flex: 1 0 0%;
+    margin-right: 0.75rem;
+    margin-bottom: 0;
+    margin-left: 0.75rem;
   }
 }
 @media (min-width: 992px) {
@@ -1798,11 +1914,31 @@ button.close {
     font-size: 0.8rem;
   }
 
+  .card {
+    margin-left: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+  }
+
+  .card-deck .card {
+    flex: 1 0 0%;
+    margin-right: 0.75rem;
+    margin-bottom: 0;
+    margin-left: 0.75rem;
+  }
+
   iframe {
     height: 207px;
     margin: auto;
     padding-top: 1.5rem;
-    width: 45%;
+    width: 50%;
   }
 
   #featured {
@@ -1876,8 +2012,27 @@ button.close {
     background-color: #40000b;
     font-weight: 700;
   }
-}
-@media (min-width: 1200px) {
+
+  .card {
+    margin-left: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+  }
+
+  .card-deck .card {
+    flex: 1 0 0%;
+    margin-right: 0.75rem;
+    margin-bottom: 0;
+    margin-left: 0.75rem;
+  }
+
   .nav {
     display: flex;
     flex-wrap: wrap;
@@ -1922,14 +2077,6 @@ button.close {
   background: #090909;
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
-  .sticky-top {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-  }
-}
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
