@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 *,
 *:before,
@@ -963,6 +964,11 @@ body {
   max-width: 900px;
 }
 
+.nav-container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
 /* stylizing */
 hr {
   box-sizing: content-box;
@@ -1258,7 +1264,7 @@ iframe {
 .masthead2 {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 350px;
   min-height: 45rem;
   padding: 15rem 0;
   background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/agteam375.webp");
@@ -1638,30 +1644,6 @@ iframe {
     transition: none;
   }
 }
-.accordion {
-  overflow-anchor: none;
-}
-
-.accordion > .card {
-  overflow: hidden;
-}
-
-.accordion > .card:not(:last-of-type) {
-  border-bottom: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.accordion > .card:not(:first-of-type) {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.accordion > .card > .card-header {
-  border-radius: 0;
-  margin-bottom: -1px;
-}
-
 .close {
   float: right;
   font-size: 1.5rem;
@@ -1686,6 +1668,11 @@ button.close {
 @media (min-width: 570px) {
   .max-height {
     height: 750px;
+  }
+
+  .max-height2 {
+    height: 450px;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 570px) and (max-width: 800px) {
@@ -1715,6 +1702,10 @@ button.close {
     margin: auto;
     align-items: center;
   }
+
+  .masthead2 {
+    background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/agteam768.webp");
+  }
 }
 @media (min-width: 786px) {
   .cta {
@@ -1740,6 +1731,11 @@ button.close {
     height: 800px;
   }
 
+  .max-height2 {
+    height: 450px;
+    justify-content: center;
+  }
+
   .masthead {
     position: relative;
     width: 100%;
@@ -1754,23 +1750,15 @@ button.close {
   }
 
   .masthead2 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-height: 45rem;
-    padding: 15rem 0;
     background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/agteam768.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
   }
 
   .masthead2 h2 {
-    max-width: 45rem;
+    max-width: 20rem;
     font-size: 1.5rem;
     letter-spacing: 0.5rem;
     font-weight: 700;
+    text-align: center;
   }
 
   .about-section {
@@ -1878,7 +1866,7 @@ button.close {
   .masthead {
     height: 100% !important;
     position: relative;
-    min-height: 45rem;
+    min-height: 25rem;
     padding: 15rem 0;
     background: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/SotP-Masthead.jpg");
     background-position: top center;
@@ -1902,7 +1890,7 @@ button.close {
   .masthead2 {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 350px;
     min-height: 45rem;
     padding: 15rem 0;
     background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/AGTeam1.webp");
@@ -2076,12 +2064,6 @@ button.close {
   border-top: 3px solid #000;
 }
 
-.faq-section {
-  background: linear-gradient(rgba(166, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
-  padding: 100px 50px;
-  border-top: 3px solid #000;
-}
-
 .replicate-section {
   background: linear-gradient(rgba(0, 0, 0, 0.8), black);
   padding: 75px 15px;
@@ -2138,8 +2120,8 @@ button.close {
 .masthead2 {
   position: relative;
   width: 100%;
-  height: auto;
-  min-height: 45rem;
+  height: 350px;
+  min-height: 20rem;
   padding: 15rem 0;
   background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/AGTeam1.webp");
   background-position: center;
@@ -2153,4 +2135,89 @@ button.close {
   letter-spacing: 0.5rem;
   font-weight: 700;
   padding-top: 10rem;
+}
+
+#questions {
+  margin: 40px auto 0;
+  padding: 0 5%;
+}
+#questions h1 {
+  font-size: 2.1em;
+  margin-bottom: 40px;
+  letter-spacing: -1px;
+}
+#questions h3 {
+  -moz-transition: all 0.35s ease;
+  -ms-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  background-color: transparent;
+  border-bottom: 3px solid #ff0101;
+  margin: 0;
+  margin: 0;
+  padding: 18px 15px;
+  transition: all 0.35s ease;
+  font-weight: 500;
+  width: 100%;
+  color: white;
+}
+#questions h3:hover {
+  background-color: transparent;
+  color: #df4747;
+  cursor: pointer;
+}
+#questions h3::before {
+  content: "❯";
+  font-size: 18px !important;
+  float: left;
+  line-height: 30px;
+  margin: 0 15px 0 5px;
+  opacity: 0.5;
+  transition: all 0.15s ease;
+}
+#questions h3.close {
+  cursor: pointer;
+}
+#questions h3.close::after {
+  content: "✕";
+  float: right;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 30px;
+}
+#questions h3.close::before {
+  transform: rotate(-90deg) !important;
+}
+#questions div {
+  margin: 0;
+}
+#questions div:first-child {
+  border: none;
+  margin-top: 45px;
+}
+#questions h3:hover::before {
+  opacity: 0.85;
+  transform: rotate(90deg);
+}
+#questions div.answer {
+  background: transparent;
+  margin-bottom: 20px;
+  line-height: 1.8em;
+}
+#questions div.answer p {
+  font-weight: 400;
+  margin: 0;
+  padding: 80px 50px 25px;
+}
+
+#closeall {
+  background-color: #f60000;
+  bottom: 30px;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  position: fixed;
+  right: 10%;
+  text-decoration: none;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */

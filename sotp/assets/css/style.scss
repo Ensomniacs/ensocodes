@@ -42,6 +42,11 @@ body {
   max-width: 900px;
 }
 
+.nav-container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
 /* stylizing */
 hr {
   box-sizing: content-box;
@@ -339,7 +344,7 @@ iframe {
 .masthead2 {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 350px;
   min-height: 45rem;
   padding: 15rem 0;
   background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/agteam375.webp");
@@ -724,26 +729,6 @@ iframe {
   }
 }
 
-.accordion {
-  overflow-anchor: none;
-}
-.accordion > .card {
-  overflow: hidden;
-}
-.accordion > .card:not(:last-of-type) {
-  border-bottom: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.accordion > .card:not(:first-of-type) {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-.accordion > .card > .card-header {
-  border-radius: 0;
-  margin-bottom: -1px;
-}
-
 .close {
   float: right;
   font-size: 1.5rem;
@@ -767,6 +752,10 @@ button.close {
 @media (min-width: 570px){
   .max-height {
     height: 750px;
+  }
+  .max-height2 {
+    height: 450px;
+    justify-content: center;
   }
 }
 
@@ -796,6 +785,9 @@ button.close {
     margin: auto;
     align-items: center;
   }
+  .masthead2 {
+    background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/agteam768.webp");
+  }
 }
 @media (min-width: 786px) {
 
@@ -822,6 +814,11 @@ iframe {
     height: 800px;
   } 
 
+  .max-height2 {
+    height: 450px;
+    justify-content: center;
+  }
+
   .masthead {
     position: relative;
     width: 100%;
@@ -836,23 +833,15 @@ iframe {
   }
 
   .masthead2 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-height: 45rem;
-    padding: 15rem 0;
     background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/agteam768.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
   }
 
 .masthead2 h2 {
-  max-width: 45rem;
+  max-width: 20rem;
   font-size: 1.5rem;
   letter-spacing: 0.5rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .about-section {
@@ -964,7 +953,7 @@ iframe {
 .masthead {
   height: 100%!important;
   position: relative;
-  min-height: 45rem;
+  min-height: 25rem;
   padding: 15rem 0;
   background: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/gallery/SotP-Masthead.jpg");
   background-position: top center;
@@ -985,7 +974,7 @@ iframe {
   .masthead2 {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 350px;
     min-height: 45rem;
     padding: 15rem 0;
     background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/AGTeam1.webp");
@@ -1157,12 +1146,6 @@ iframe {
   border-top: 3px solid #000;
 }
 
-.faq-section {
-  background: linear-gradient(rgba(166, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
-  padding: 100px 50px;
-  border-top: 3px solid #000;
-}
-
 .replicate-section {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0,1));
   padding: 75px 15px;
@@ -1221,8 +1204,8 @@ iframe {
 .masthead2 {
   position: relative;
   width: 100%;
-  height: auto;
-  min-height: 45rem;
+  height: 350px;
+  min-height: 20rem;
   padding: 15rem 0;
   background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/AGTeam1.webp");
   background-position: center;
@@ -1239,3 +1222,118 @@ iframe {
   }
 }
 
+// FAQ page
+
+#questions {
+	margin: 40px auto 0;
+  padding: 0 5%;
+
+  & h1 {
+    font-size: 2.1em;
+    //font-weight: 400;
+    margin-bottom: 40px;
+    letter-spacing:-1px;
+  }
+  
+  & h3 {
+    -moz-transition: all 0.35s ease;
+    -ms-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    -webkit-transition: all 0.35s ease;
+    background-color: transparent;
+    border-bottom: 3px solid lighten($vred, 2%);
+    margin: 0;
+    margin: 0;
+    padding: 18px 15px;
+    transition: all 0.35s ease;
+    font-weight: 500;
+    width: 100%;
+    color: white;
+    
+    &:hover {
+      background-color: transparent;
+      color: lighten($brightred, 2%);
+      cursor: pointer;
+    }
+    
+    &::before {
+      content: "\276f";
+      font-size: 18px!important;
+      float: left;
+      line-height: 30px;
+      margin: 0 15px 0 5px;
+      opacity: 0.5;
+      -moz-transition: all 0.15s ease;
+      -ms-transition: all 0.15s ease;
+      -o-transition: all 0.15s ease;
+      -webkit-transition: all 0.15s ease;
+      transition: all 0.15s ease;
+    }
+  }
+  
+  & h3.close {
+    cursor: pointer;
+    
+    &::after {
+      content: "\2715";
+      float: right;
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+    
+    &::before {
+      -moz-transform: rotate(-90deg)!important;
+      -ms-transform: rotate(-90deg)!important;
+      -o-transform: rotate(-90deg)!important;
+      -webkit-transform: rotate(-90deg)!important;
+      transform: rotate(-90deg)!important;
+    }
+  }
+  
+  div {
+    margin: 0;
+  
+    &:first-child {
+      border: none;
+      margin-top: 45px;
+    }
+  }
+
+  
+  h3:hover {
+    &::before {
+      opacity: 0.85;
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+  }
+  
+  div.answer {
+    background: transparent;
+    margin-bottom: 20px;
+    line-height: 1.8em;
+    
+    p {
+      font-weight: 400;
+      margin: 0;
+      padding: 80px 50px 25px;
+    }
+  }
+  
+}
+
+#closeall {
+	background-color:$vred;
+	bottom: 30px;
+	color: lighten($black, 100%);
+	font-size: 14px;
+	padding: 5px 10px;
+	position: fixed;
+	right: 10%;
+	text-decoration: none;
+	z-index: 1;
+}
