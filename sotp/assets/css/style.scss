@@ -642,6 +642,7 @@ iframe {
   .card {
     margin-left:1.5rem;
     flex-direction: column;
+    justify-content: space-between;
 }
   .card-deck {
     display: flex;
@@ -650,7 +651,7 @@ iframe {
     margin-left: -0.75rem;
   }
   .card-deck .card {
-    flex: 1 0 0%;
+    flex: 1 0 50%;
     margin-right: 0.75rem;
     margin-bottom: 0;
     margin-left: 0.75rem;
@@ -771,6 +772,27 @@ button.close {
   }
 }
 
+
+@media only screen and (min-width: 570px) and (max-width: 800px)
+{
+  .card {
+    margin-left:1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  .card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+  }
+  .card-deck .card {
+    flex: 1 0 0%;
+    margin-right: 0.75rem;
+    margin-bottom: 0;
+    margin-left: 0.75rem;
+  }
+}
 @media (min-width: 786px) {
 
 .cta {
@@ -970,6 +992,17 @@ iframe {
       font-size: 0.8rem;
     }
   }
+
+iframe { 
+  height: 207px;
+  margin: auto;
+  padding-top: 1.5rem;
+  width: 45%;
+} 
+#featured {
+  height: 450px !important;
+  width: 100%;
+}
 }
 @media (min-width: 1200px) {
   .masthead {

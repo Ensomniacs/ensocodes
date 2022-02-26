@@ -75,8 +75,6 @@
   height: 511px;
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: 100% 25%;
-     object-position: 100% 25%;
 }
 
 .reed-caption {
@@ -353,6 +351,10 @@
        object-position: 100% 60%;
   }
 
+  .blue600 {
+    height: 185px !important;
+  }
+
   .reed-caption {
     margin-top: 5%;
   }
@@ -428,6 +430,10 @@
        object-position: 100% 60%;
   }
 
+  .blue600 {
+    height: 303px !important;
+  }
+
   .reed-caption {
     margin-top: -2%;
   }
@@ -495,8 +501,7 @@
   .sub-line {
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    flex-direction: column;
+    width: 100%;
   }
 
   .credit {
@@ -504,7 +509,7 @@
     line-height: 16px;
     color: #a5a5a5;
     font-weight: 500;
-    margin-right: auto;
+    margin-left: auto;
   }
 
   .carousel {
@@ -516,7 +521,7 @@
     padding: 0;
     list-style-type: none;
     width: 900px;
-    height: 380px;
+    height: 600px;
     position: relative;
   }
   .carousel__prev > label {
