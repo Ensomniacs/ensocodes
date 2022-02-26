@@ -212,16 +212,22 @@ h6, .h6 {
 }
 
 #MEM001 h4, #MEM002 h4 {
-  margin-bottom: 5px;
-  font-weight: 500;
-  font-size: 0.75rem;
-  letter-spacing: 0.4rem;
-  color: $red;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  color: white;
+  border: 2px solid;
+  width: 30%;
+  text-align: center;
+  line-height: inherit;
 }
 
-#MEM001 a:hover, #MEM002 a:hover {
+#contact a:hover, #MEM001 a:hover, #MEM002 a:hover {
   color: #fd0000;
   text-decoration: none;
+}
+#contact h4 {
+  font-size: 0.8rem;
 }
 
 hr {
@@ -276,6 +282,7 @@ iframe {
   flex-wrap: wrap;
   margin-right: .25rem;
   margin-left: 0.33rem;
+  justify-content: center;
 }
 
 .card {
@@ -335,7 +342,7 @@ iframe {
   height: auto;
   min-height: 45rem;
   padding: 15rem 0;
-  background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/agteam375.jpg");
+  background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/agteam375.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -834,7 +841,7 @@ iframe {
     height: auto;
     min-height: 45rem;
     padding: 15rem 0;
-    background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/agteam768.jpg");
+    background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/agteam768.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -976,15 +983,16 @@ iframe {
     font-weight: 700;
   }
   .masthead2 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 45rem;
-  padding: 15rem 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 45rem;
+    padding: 15rem 0;
+    background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/AGTeam1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 }
   #about p {
     max-width: 900px;
@@ -1216,7 +1224,7 @@ iframe {
   height: auto;
   min-height: 45rem;
   padding: 15rem 0;
-  background: $red;
+  background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/AGTeam1.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
