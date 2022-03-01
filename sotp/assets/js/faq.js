@@ -29,8 +29,8 @@ $(document).ready(function() {
 
     } else {
       $('#closeall').hide();
-      var abiertas = $('.close').length
-      console.log(abiertas);
+      var close = $('.close').length
+      console.log(close);
     }
   }); //Close Function Click	            
 

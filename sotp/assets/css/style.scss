@@ -218,7 +218,7 @@ h6, .h6 {
 
 #MEM001 h4, #MEM002 h4 {
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 0;
   color: white;
   border: 2px solid;
@@ -788,6 +788,10 @@ button.close {
   .masthead2 {
     background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/agteam768.webp");
   }
+  iframe {
+    width: 65%;
+    height: 205px;
+  }
 }
 @media (min-width: 786px) {
 
@@ -879,6 +883,9 @@ iframe {
     font-size: 0.8rem;
   }
 }
+#story {
+  height: 225px;
+}
 }
 
 @media (min-width: 801px) and (max-width: 991px) {
@@ -898,6 +905,13 @@ iframe {
     margin-right: 0.75rem;
     margin-bottom: 0;
     margin-left: 0.75rem;
+  }
+  #featured {
+    height: 450px !important;
+    width: 100%;
+  }
+  #story {
+    height: 225px;
   }
 }
 @media (min-width: 992px) {

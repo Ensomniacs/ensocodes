@@ -490,7 +490,7 @@
 }
 @media only screen and (min-width: 992px) {
   .reed-caption {
-    margin-top: -9%;
+    margin-top: -5%;
   }
 
   .arripe-icon {
@@ -856,6 +856,7 @@ ul a:hover {
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 10px;
+  font-size: 0.8rem;
 }
 #MEM001 h4, #MEM002 h4 {
   margin: 0;
@@ -1138,7 +1139,7 @@ h6, .h6 {
 
 #MEM001 h4, #MEM002 h4 {
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 0;
   color: white;
   border: 2px solid;
@@ -1706,6 +1707,11 @@ button.close {
   .masthead2 {
     background-image: url("https://ensomniacs.github.io/seasonoftheplague/assets/img/agteam768.webp");
   }
+
+  iframe {
+    width: 65%;
+    height: 205px;
+  }
 }
 @media (min-width: 786px) {
   .cta {
@@ -1794,6 +1800,10 @@ button.close {
   #replicate h4 {
     font-size: 0.8rem;
   }
+
+  #story {
+    height: 225px;
+  }
 }
 @media (min-width: 801px) and (max-width: 991px) {
   .card {
@@ -1814,6 +1824,15 @@ button.close {
     margin-right: 0.75rem;
     margin-bottom: 0;
     margin-left: 0.75rem;
+  }
+
+  #featured {
+    height: 450px !important;
+    width: 100%;
+  }
+
+  #story {
+    height: 225px;
   }
 }
 @media (min-width: 992px) {
