@@ -23,7 +23,7 @@ $(document).ready(function() {
       $(this).addClass('close');
     };
 
-    if ($('.close').length >= 3) {
+    if ($('.close').length >= 2) {
 
       $('#closeall').fadeIn('fast');
 
