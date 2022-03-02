@@ -37,7 +37,7 @@ $(document).ready(function() {
 }); //Close Function Ready
 
 $('#closeall').click(function() {
-  $('.answer').fadeOut(200);
+  $('.answer').fadeOut('200');
   $('h3').removeClass('close');
   $('#closeall').fadeOut('fast');
 });

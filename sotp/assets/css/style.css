@@ -1974,6 +1974,11 @@ button.close {
   }
 }
 @media (min-width: 1200px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1080px;
+  }
+
   .masthead {
     height: 100% !important;
     position: relative;
@@ -1998,10 +2003,6 @@ button.close {
     background-attachment: scroll;
     background-size: cover;
     border-top: 7px solid rgba(255, 255, 255, 0.9);
-  }
-
-  .text-body {
-    color: #212529 !important;
   }
 
   body {
@@ -2156,6 +2157,12 @@ button.close {
   padding-top: 10rem;
 }
 
+@media only screen and (min-width: 2400px) {
+  .container {
+    margin: 0 auto;
+    max-width: 90vw;
+  }
+}
 #questions {
   margin: 40px auto 0;
   padding: 0 5%;
@@ -2222,6 +2229,7 @@ button.close {
   background: transparent;
   margin-bottom: 20px;
   line-height: 1.8em;
+  max-height: 50vh;
 }
 #questions div.answer p {
   font-weight: 400;
