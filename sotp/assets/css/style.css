@@ -2290,4 +2290,8 @@ button.close {
   #story {
     height: 450px;
   }
+
+  #consume.overlay {
+    padding: 105px;
+  }
 }/*# sourceMappingURL=style.css.map */
