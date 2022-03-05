@@ -1,14 +1,38 @@
 #MEM001, #MEM002 {
-    & .card {
-        margin-left:1.5rem;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+
+    & .cardrow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
     &  .card-deck {
         display: flex;
-        flex-flow: row wrap;
-        margin: auto;
-        width: 320px;
+        flex-direction: column;
+        width: 100%
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0.25rem;
+        margin-left: 0.33rem;
+    
+        &__wrap {
+    
+            &--outer {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+    
+            &--inner {
+                display: flex;
+                flex-direction: row;
+                width: 33.33%;
+            }
+        }
+    }
 
       & .card {
         flex: 1 0 100%;

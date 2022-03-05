@@ -1,21 +1,38 @@
-#MEM001 .card, #MEM002 .card {
-  margin-left: 1.5rem;
-  flex-direction: column;
-  justify-content: space-between;
-}
-#MEM001 .card-deck, #MEM002 .card-deck {
+#MEM001 .cardrow, #MEM002 .cardrow {
   display: flex;
-  flex-flow: row wrap;
-  margin: auto;
-  width: 320px;
+  flex-direction: column;
+  width: 100%;
 }
-#MEM001 .card-deck .card, #MEM002 .card-deck .card {
+#MEM001 .cardrow .card-deck, #MEM002 .cardrow .card-deck {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#MEM001 .cardrow .card, #MEM002 .cardrow .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 0.25rem;
+  margin-left: 0.33rem;
+}
+#MEM001 .cardrow .card__wrap--outer, #MEM002 .cardrow .card__wrap--outer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#MEM001 .cardrow .card__wrap--inner, #MEM002 .cardrow .card__wrap--inner {
+  display: flex;
+  flex-direction: row;
+  width: 33.33%;
+}
+#MEM001 .cardrow .card, #MEM002 .cardrow .card {
   flex: 1 0 100%;
   margin-right: 0.75rem;
   margin-bottom: 0;
   margin-left: 0.75rem;
 }
-#MEM001 .card-deck .card-title, #MEM002 .card-deck .card-title {
+#MEM001 .cardrow .card-title, #MEM002 .cardrow .card-title {
   padding-top: 10px;
 }
 #MEM001 .img-350, #MEM002 .img-350 {
