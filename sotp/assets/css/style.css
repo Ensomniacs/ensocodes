@@ -1290,9 +1290,6 @@ h6 {
 #questions h3.close::before {
   transform: rotate(-90deg) !important;
 }
-#questions div {
-  margin: 0;
-}
 #questions div:first-child {
   border: none;
   margin-top: 45px;
@@ -1303,9 +1300,7 @@ h6 {
 }
 #questions div.answer {
   background: transparent;
-  margin-bottom: 20px;
   line-height: 1.8em;
-  max-height: 50vh;
 }
 #questions div.answer p {
   font-weight: 400;
@@ -1583,6 +1578,14 @@ button.close {
   #enhanceh6 {
     font-size: 0.9rem;
     text-align: right;
+  }
+
+  div.answer {
+    margin-bottom: 350px;
+    max-height: 10vh;
+  }
+  div.answer:nth-child(2) {
+    margin-bottom: 460px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
