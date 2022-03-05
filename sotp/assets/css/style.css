@@ -2097,7 +2097,7 @@ button.close {
   }
 
   iframe {
-    height: 207px;
+    height: 277px;
     margin: auto;
     padding-top: 1.5rem;
     width: 50%;
@@ -2111,7 +2111,7 @@ button.close {
 @media (min-width: 1200px) {
   .container {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1100px;
   }
 
   .masthead {
@@ -2214,11 +2214,42 @@ button.close {
   }
 
   .cta {
-    width: 65vw;
+    width: 75vw;
+    max-width: 700px;
+    padding-right: inherit;
+    margin-left: 50%;
   }
 
   #story {
     height: 450px;
+  }
+
+  .modal-img {
+    height: 192px;
+  }
+
+  h6 {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  #replicate h6 {
+    font-size: 1.8rem;
+  }
+  #replicate h4 {
+    font-size: 1.4rem;
+  }
+
+  .img-350 {
+    width: 350px;
+    height: 350px;
   }
 }
 .btn {
@@ -2282,7 +2313,8 @@ button.close {
 @media only screen and (min-width: 2400px) {
   .container {
     margin: 0 auto;
-    max-width: 80vw;
+    width: 80vw;
+    max-width: 1400px;
   }
 
   .cta {

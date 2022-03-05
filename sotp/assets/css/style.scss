@@ -919,7 +919,7 @@ button.close {
   }
 }
 
-// Mobile to tablet 570-800
+// Mobile to tablet 570-786
 @media only screen and (min-width: 570px) and (max-width: 785.98px) {
   .card {
     margin-left:1.5rem;
@@ -1135,8 +1135,7 @@ width: 100%;
         border-bottom: 0.25rem solid $brightred;
        }
      }
-   }
-   
+   }  
 }
 .masthead {
   height: 100%!important;
@@ -1214,7 +1213,7 @@ width: 100%;
   }
 
 iframe { 
-  height: 207px;
+  height: 277px;
   margin: auto;
   padding-top: 1.5rem;
   width: 50%;
@@ -1229,7 +1228,7 @@ iframe {
 @media (min-width: 1200px) {
   .container {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1100px;
   }
   .masthead {
     height: 100%!important;
@@ -1256,7 +1255,6 @@ iframe {
     background-size: cover;
     border-top: 7px solid rgba(255, 255, 255, 0.9);
   }
-
   body {
     letter-spacing: 0.0625em;
   }
@@ -1330,13 +1328,39 @@ iframe {
     text-decoration: none;
   }
   .cta {
-    width: 65vw;
+    width: 75vw;
+    max-width: 700px;
+    padding-right: inherit;
+    margin-left: 50%;
   }
   #story {
     height: 450px;
   }
-  
+    .modal-img {
+      height: 192px;
+    }
+    h6 {
+      font-size: 1.8rem;
   }
+    h1 {
+      font-size: 1.9rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+    #replicate {
+      & h6 {
+        font-size: 1.8rem;
+    }
+      & h4 {
+      font-size: 1.4rem;
+    }
+  }
+  .img-350 {
+    width: 350px;
+    height: 350px;
+  }
+}
   
 
 
@@ -1405,7 +1429,8 @@ iframe {
 @media only screen and (min-width: 2400px) {
   .container {
     margin: 0 auto;
-    max-width: 80vw;
+    width: 80vw;
+    max-width: 1400px;
   }
   .cta {
     width: 30vw;
