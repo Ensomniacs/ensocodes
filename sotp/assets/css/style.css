@@ -706,6 +706,22 @@ ul a:hover {
     display: block;
   }
 }
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 5px;
+  display: none;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+}
+
 .row-padding, .row-padding > .half, .row-padding > .third, .row-padding > .twothird, .row-padding > .threequarter, .row-padding > .quarter, .row-padding > .col {
   padding: 8px;
 }
