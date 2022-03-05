@@ -719,7 +719,9 @@ button.close {
       margin: auto;
       padding-top: 1.5rem;
     }
-
+  #story {
+  width: 100%;
+  }
     .consume-section {
       position: relative;
       width: 100%;
@@ -1328,7 +1330,7 @@ iframe {
     text-decoration: none;
   }
   .cta {
-    width: 75vw;
+    width: 45vw;
     max-width: 700px;
     padding-right: inherit;
     margin-left: 50%;
@@ -1359,6 +1361,13 @@ iframe {
   .img-350 {
     width: 350px;
     height: 350px;
+  }
+
+  iframe {
+    height: 320px;
+  }
+  #featured {
+    height: 620px; 
   }
 }
   
@@ -1448,5 +1457,12 @@ iframe {
   h5 {
     font-size: 1.9rem;
   }
+  iframe {
+    height: 390px;
+  }
+  #featured {
+    height: 633px;
+  }
+  
 }
 

@@ -538,6 +538,10 @@
   }
 }
 @media only screen and (min-width: 1200px) {
+  .reed-caption {
+    margin-top: -1%;
+  }
+
   .title {
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -564,5 +568,36 @@
   }
   .carousel__next > label {
     right: 0.9%;
+  }
+}
+@media only screen and (min-width: 2400px) {
+  .reed-caption {
+    margin-top: -5%;
+  }
+
+  .title {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  .reed600 {
+    height: 800px;
+  }
+
+  .description, .credit {
+    font-size: 1.1rem;
+  }
+
+  .carousel {
+    margin: 0 auto !important;
+    width: 1100px;
+  }
+  .carousel__items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 1400px;
+    height: 900px;
+    position: relative;
   }
 }/*# sourceMappingURL=gallery.css.map */

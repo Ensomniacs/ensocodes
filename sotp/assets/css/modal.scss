@@ -111,5 +111,19 @@
   .modal-content{
     width:900px;
   }
-
+}
+@media (mid-width: 1200px) {
+  .modal-img {
+    height: 210px;
+  }
+}
+@media (mid-width: 2400px) {
+  .modal-img {
+    height: 250px;
+  }
+}
+@media (mid-width: 3200px) {
+  .modal-img {
+    height: 250px;
+  }
 }
