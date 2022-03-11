@@ -1,0 +1,7 @@
+{
+    "name": "enso.codes",
+    "version": "1.0.0",
+    "description": "IT Topaz portfolio review",
+    "private": "true",
+    "main": "assets/js/main.js"
+}
