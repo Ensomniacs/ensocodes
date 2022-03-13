@@ -206,61 +206,73 @@ body {
   flex-flow: row wrap;
   align-content: flex-start;
   align-items: fill;
-  width: 75%;
-  margin: auto;
-  background-color: #090909;
+  width: 100%;
+  margin: 0.3em;
+  background-color: white;
+  padding-top: 15vh;
 }
 .gallery .galleryItem {
-  flex: 1 100%;
+  flex: 1 1 auto;
   margin: auto;
   position: relative;
-  width: 100vw;
-  height: 70vh;
+  margin: 0.3em;
+  width: 45vw;
+  height: 30vh;
   overflow: hidden;
 }
+.gallery .galleryItem.featured {
+  width: 100vw;
+  height: 70vh;
+}
 .gallery .galleryItem:hover img {
-  opacity: 0.75;
+  filter: brightness(70%);
 }
 .gallery a {
   display: block;
   width: 100%;
   height: 100%;
-  color: #A67458;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
 .gallery h2 a {
   display: inline;
-  border: 3px solid #387373;
-  background: rgba(255, 255, 255, 0.98);
   padding: 0.8rem;
+}
+.gallery h2 a strong {
+  font-family: interstate, sans-serif;
+  font-size: 700;
+}
+.gallery h2 a em {
+  font-size: 400;
 }
 .gallery img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.2s;
   opacity: 0.9;
+  max-width: 100%;
 }
 .gallery figcaption {
-  color: #A67458;
+  color: white;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 3em;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0) 100%);
 }
 
 h1 {
-  font-family: Katarine, interstate, sans-serif;
+  font-family: proxima-nova, sans-serif;
   font-weight: 700;
   font-size: 2em;
 }
 
 h2 {
   font-family: interstate-condensed, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.5em;
   padding: 3px;
 }
@@ -281,16 +293,6 @@ p {
 @media screen and (max-width: 600px) {
   .logo {
     filter: invert(100%) sepia(94%) saturate(23%) hue-rotate(198deg) brightness(105%) contrast(110%);
-  }
-}
-@media screen and (min-width: 800px) {
-  .featured {
-    flex: 3 0px;
-    order: 1;
-  }
-
-  .secondary {
-    order: 2;
   }
 }
 @media screen and (min-aspect-ratio: 1/1) and (max-width: 1440px) {
