@@ -14,10 +14,13 @@ header a {
 
 header {
   padding: 0 20px;
-  height: 85px;
+  height: 15vh;
   background-color: white;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 .svg-header {
@@ -28,12 +31,19 @@ header {
 }
 
 #brand {
-  font-weight: 700;
+  font-weight: 300;
   font-size: 1.2em;
   display: flex;
   align-items: center;
+  color: #387373;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  font-family: proxima-nova, sans-serif;
+}
+#brand strong {
+  padding-right: 5px;
+}
+#brand em {
+  padding-left: 5px;
 }
 
 #brand a {
@@ -69,12 +79,13 @@ ul a:hover {
   margin: auto 0;
   display: none;
   cursor: pointer;
+  z-index: 9999;
 }
 
 #hamburger-icon div {
   width: 35px;
   height: 3px;
-  background-color: #97A6A0;
+  background-color: white;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -96,8 +107,10 @@ ul a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin-top: -2%;
-  padding-top: 7%;
+  margin-top: -10%;
+  height: 100vh;
+  background-color: rgba(9, 9, 9, 0.7);
+  padding-top: 50%;
 }
 
 .mobile-menu {
@@ -110,21 +123,31 @@ ul a:hover {
 }
 
 .mobile-menu li {
-  background-color: #090909;
   width: 100%;
   text-align: center;
   padding: 30px 10px;
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
 @media only screen and (max-width: 600px) {
   header nav {
     display: none;
+  }
+
+  header {
+    background-color: transparent;
+  }
+
+  #brand {
+    color: white;
+    z-index: 9999;
+  }
+
+  ul a {
+    background-color: transparent;
+    color: #97A6A0;
+  }
+  ul a:active {
+    color: white;
   }
 
   #hamburger-icon {
