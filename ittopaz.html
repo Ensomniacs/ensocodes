@@ -3,54 +3,79 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Homepage for IT Topaz Work Profolio" />
+  <meta name="description" content="Collective portfolio of client and coursework based projects created by Central Arkansas based Web Designer and Developer." />
   <meta name="author" content="Eli Brewer" />
   <meta property="og:site_name" content="Enso | Portfolio">
-  <meta property="og:title" content="Enso | Portfolio">
+  <meta property="og:title" content="Home - Enso.codes">
   <meta property="og:url" content="https://enso.codes/">
   <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/rnq1ivn.css">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
   </head>
 
   <body>
-<header>
-  <div class="header-container">
-    <div class="nav-left">Student Designer</div>
-    <div class="nav-mid">Portfolio</div>
-    <div class="nav-right">2022</div>
-  </div>
-  <div class="dec-line"></div>
-</header>
-<section class="intro">
-  <h1 class="intro h1">Eli Brewer</h1>
-</section>
-<section class="intro">
-  <h1 class="intro h1">UX Generalist</h1>
-</section>
-<section class="intro w-clearfix">
-  <div class="arrow">
+    <div class="nav-container">
+      <header class="svg-header">
+        <div id="brand">
+          <a href="#page-top" class="svg"><object data="assets/img/enso.svg" class="logo"></object></a> Eli Brewer // UX Generalist</div>
+      <nav class="primary">
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="archive.html">Archive</a></li>
+          <li><a href="https://eliemory.wordpress.com/">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="archive.html">Archive</a></li>
+          <li><a href="https://eliemory.wordpress.com/">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    </div>
 
-  </div>
-  <div class="block-s right-align">
-    <div class="block-cover">
-      <p>Currently enrolled at the University of Arkansas at Little Rock. Working on my UX Design Certification with Google. Occasionally take up freelance work. Let's chat: <a href="mailto:enso@enso.codes?subject=Hello!">enso@enso.codes</a></p>
-      <div class="dec-line"></div>
+<section class="projects" id="projects">
+  <div class="content">
+    <div class="gallery">
+        <figure class="galleryItem">
+            <a href="/sotp"><img src="assets/img/projects/sotp.webp" alt="Season of the Plague"></a>
+            <figcaption><h2 class="project-title"><a href="/sotp" class="project-title-link">Season of the Plague // Web Development</a></h2></figcaption>
+        </figure>
+        <figure class="galleryItem">
+            <a href="/zerosev"><img src="assets/img/projects/zerosev.webp" alt="ZEROSEV Rebrand"></a>
+            <figcaption><h2 class="project-title"><a href="/zerosev" class="project-title-link">ZEROSEV Rebrand // Web Design</a></h2></figcaption>
+        </figure>
+                <figure class="galleryItem">
+            <a href="/it-topaz"><img src="assets/img/projects/ittopaz.webp" alt="IT Topaz"></a>
+            <figcaption><h2 class="project-title"><a href="/it-topaz" class="project-title-link">IT Topaz // UALR IT Minor Projects</a></h2></figcaption>
+        </figure>
+                <figure class="galleryItem">
+            <a href="https://ensomniacs.github.io/ifsc-3342"><img src="assets/img/projects/mobile.webp" alt="Mobile Web Design Projects"></a>
+            <figcaption><h2 class="project-title"><a href="https://ensomniacs.github.io/ifsc-3342" class="project-title-link">IFSC-3342 // Mobile Web Development Course Work</a></h2></figcaption>
+        </figure>
+                <figure class="galleryItem">
+            <a href="https://ensomniacs.github.io/ifsc-1310"><img src="assets/img/projects/webtech.webp" alt="Web Technologies"></a>
+            <figcaption><h2 class="project-title"><a href="https://ensomniacs.github.io/ifsc-1310" class="project-title-link">IFSC-1310 // Web Technologies Course Work</a></h2></figcaption>
+        </figure>
+        <figure class="galleryItem">
+          <a href="/inspire"><img src="assets/img/projects/inspire.webp" alt="Web Technologies"></a>
+          <figcaption><h2 class="project-title"><a href="/inspire" class="project-title-link">Centnnial Planner // Inspiring Innovative Concepts</a></h2></figcaption>
+      </figure>
     </div>
-  </div>
+</div>
 </section>
-<section class="works">
-  <div class="spacer"></div>
-  <div class="portfolio">
-    <div class="block-xl center-align flex-baseline w-clearfix">
-      <h2>Personal & Client Work</h2>
-      <p>Mixed collection of projects and work I have worked on personally and for clients.</p>
-    </div>
-  </div>
-  <div class="spacer"></div>
-  <div class="works-proj w-clearfix"></div>
-</section> 
 </body>
 <script src="https://kit.fontawesome.com/ce5e146adf.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+<script src="assets/js/menu.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HREH7LKY0V"></script>
 <script>
