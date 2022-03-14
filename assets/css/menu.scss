@@ -16,7 +16,7 @@ header a {
 
 header {
   padding: 0 20px;
-  height: 15vh;
+  height: 12vh;
   background-color: $white;
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,9 @@ header {
 
   & strong {
     padding-right: 5px;
+    font-weight: 700;
   }
+
   & em {
     padding-left: 5px;
   }
@@ -83,7 +85,7 @@ ul a {
   margin: auto 0;
   display: none;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 999;
 }
 
 #hamburger-icon div {
@@ -135,15 +137,20 @@ ul a {
   padding: 30px 10px;
   }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 580px) {
   header nav {
     display: none;
+  }
+  #hamburger-icon {
+    display: block;
   }
   header {
     background-color: transparent;
   }
+  
   #brand {
     color: $white;
+    font-size: 1.5rem;
     z-index: 9999;
   }
 ul a {
@@ -153,9 +160,6 @@ ul a {
     color: $white;
   }
 }
-  #hamburger-icon {
-    display: block;
-  }
 }
 
 

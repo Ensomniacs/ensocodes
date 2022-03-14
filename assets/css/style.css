@@ -14,7 +14,7 @@ header a {
 
 header {
   padding: 0 20px;
-  height: 15vh;
+  height: 12vh;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -41,6 +41,7 @@ header {
 }
 #brand strong {
   padding-right: 5px;
+  font-weight: 700;
 }
 #brand em {
   padding-left: 5px;
@@ -79,7 +80,7 @@ ul a:hover {
   margin: auto 0;
   display: none;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 999;
 }
 
 #hamburger-icon div {
@@ -128,9 +129,13 @@ ul a:hover {
   padding: 30px 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 580px) {
   header nav {
     display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
   }
 
   header {
@@ -139,6 +144,7 @@ ul a:hover {
 
   #brand {
     color: white;
+    font-size: 1.5rem;
     z-index: 9999;
   }
 
@@ -148,10 +154,6 @@ ul a:hover {
   }
   ul a:active {
     color: white;
-  }
-
-  #hamburger-icon {
-    display: block;
   }
 }
 .back-to-top {
@@ -178,7 +180,7 @@ ul a:hover {
 
 body {
   font-family: interstate, sans-serif;
-  background-color: white;
+  background-color: #090909;
   color: #090909;
   font-weight: 500;
   font-style: normal;
@@ -208,7 +210,7 @@ body {
   align-items: fill;
   width: 100%;
   margin: 0.3em;
-  background-color: white;
+  background-color: #090909;
   padding-top: 15vh;
 }
 .gallery .galleryItem {
@@ -283,6 +285,19 @@ p {
   font-size: 1.2em;
 }
 
+a.svg {
+  position: relative;
+  display: inline-block;
+}
+a.svg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .logo {
   width: 55px;
   height: 55px;
@@ -290,13 +305,23 @@ p {
   filter: invert(20%) sepia(37%) saturate(294%) hue-rotate(138deg) brightness(93%) contrast(91%);
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .logo {
     filter: invert(100%) sepia(94%) saturate(23%) hue-rotate(198deg) brightness(105%) contrast(110%);
   }
-}
-@media screen and (min-aspect-ratio: 1/1) and (max-width: 1440px) {
-  .index-item-title {
-    font-size: 18px;
+
+  .gallery {
+    max-height: 30vh;
+    margin: 0;
+  }
+  .gallery .galleryItem {
+    max-height: 30vh;
+    width: 100vw;
+    margin: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .gallery .galleryItem .featured {
+    height: 30vh;
   }
 }/*# sourceMappingURL=style.css.map */
