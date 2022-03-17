@@ -110,7 +110,7 @@ ul a:hover {
   justify-content: flex-start;
   margin-top: -10%;
   height: 100vh;
-  background-color: rgba(9, 9, 9, 0.7);
+  background-color: rgba(9, 9, 9, 0.9);
   padding-top: 50%;
 }
 
@@ -194,10 +194,6 @@ body {
   max-width: 100%;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .content {
   width: 100%;
   margin: auto;
@@ -262,7 +258,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 3em;
+  padding: 0.8em;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0) 100%);
 }
 
@@ -323,5 +319,21 @@ a.svg:after {
   }
   .gallery .galleryItem .featured {
     height: 30vh;
+  }
+  .gallery figcaption h2 {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 601px) {
+  body {
+    background-color: white;
+  }
+
+  .gallery {
+    background-color: white;
+    margin: auto;
+  }
+  .gallery figcaption {
+    padding: 0.8rem;
   }
 }/*# sourceMappingURL=style.css.map */

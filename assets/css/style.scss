@@ -24,11 +24,6 @@ body {
     max-width: 100%;
   }
 
-
-* {
-    box-sizing: border-box;
-}
-
 .content {
     width: 100%;
     margin: auto;
@@ -95,7 +90,7 @@ body {
         bottom: 0;
         left: 0;
         right: 0;
-        padding: 3em;
+        padding: 0.8em;
         background-image: linear-gradient(
             to top,
             rgba(0, 0, 0, 0.8),
@@ -161,6 +156,24 @@ a.svg {
             & .featured {
                 height: 30vh;
             }
+        }
+        & figcaption {
+            & h2 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    body {
+        background-color: $white;
+    }
+    .gallery {
+        background-color: $white;
+        margin: auto;
+        & figcaption {
+        padding: 0.8rem;
         }
     }
 }
