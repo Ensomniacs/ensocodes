@@ -51,6 +51,7 @@
                     alert("currency Not Found - Status: " + msg1Object.status)
                     return;
                     }        
+                        document.getElementById("title").innerHTML = BaseCurrency + " to " + ConvertCurrency;
                         var ctx0 = document.getElementById("chartjs-0");
                         var myChart = new Chart(ctx0, {
                             "type":"line",
@@ -77,6 +78,7 @@
             document.getElementById("ConvertCurrency").value = "";
             document.getElementById("FromDate").value = "";
             document.getElementById("ToDate").value = "";
+            document.getElementById("title").value = "";
             
             /* Ugly Code to Erase Canvas */
             var canvas0 = document.getElementById("chartjs-0");
