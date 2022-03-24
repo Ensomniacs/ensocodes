@@ -31,7 +31,7 @@
                     /* Your code to process the result goes here - 
                        display the returned message */
                        var currencydate = [];
-                       var currencyvalue =[];
+                       var currencyvalue = [];
                        var numdays = msg1.results.length;
                        if (numdays > 0) {
                            for (var i = 0; i < numdays; i++) {
@@ -56,32 +56,27 @@
                             "type":"line",
                             "data": {
                                 "labels": currencydate,
-                                "datasets":[{
-                                    "label":"Exchange Close",
+                                "datasets":[
+                                    {
+                                    "label":"One " + BaseCurrency + " to " + ConvertCurrency,
                                     "data": currencyvalue,
-                                    fill: false,
+                                    "fill": false,
                                     "borderColor":"rgb(75,192,192)",
-                                    "lineTension":0.1}]},
-                                    "options":{
-                                        responsive: false,
-                                        maintainAspectRation: true,
+                                    "lineTension":0.1
                                     }
+                                ]
+                            },
                                 }
                         );
-                }
-                else {
-                    /* AJAX completed with error - probably invalid currency ticker symbol */
-                    alert("Currency Not Found - Status: " + msg2Object.status)
-                    return
-                }
+                    }
             }
         
         
         function ClearForm() {
-            document.getElementById("currencySymbol").value = "";
+            document.getElementById("BaseCurrency").value = "";
+            document.getElementById("ConvertCurrency").value = "";
             document.getElementById("FromDate").value = "";
             document.getElementById("ToDate").value = "";
-            document.getElementById("currencyValueTable").innerHTML = "";
             
             /* Ugly Code to Erase Canvas */
             var canvas0 = document.getElementById("chartjs-0");
