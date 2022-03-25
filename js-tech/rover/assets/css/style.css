@@ -1,0 +1,54 @@
+html {
+  font-family: "roboto", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1em;
+  color: #090909;
+}
+
+table {
+  text-align: center;
+  border: 1px solid #090909;
+}
+
+th {
+  margin: 0% 2%;
+  border: 1px solid #090909;
+}
+
+td {
+  border: 1px solid #090909;
+  text-align: left;
+}
+
+img {
+  border: 1px solid #090909;
+}
+
+.img-container {
+  float: left;
+  width: 40%;
+  padding: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img[src="#"] {
+  display: none;
+}
+
+#RoverError {
+  color: red;
+}
+
+#PictureDateError {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
