@@ -301,11 +301,12 @@ a.svg:after {
   filter: invert(20%) sepia(37%) saturate(294%) hue-rotate(138deg) brightness(93%) contrast(91%);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 580px) {
   .logo {
     filter: invert(100%) sepia(94%) saturate(23%) hue-rotate(198deg) brightness(105%) contrast(110%);
   }
-
+}
+@media only screen and (max-width: 600px) {
   .gallery {
     max-height: 30vh;
     margin: 0;
@@ -320,8 +321,14 @@ a.svg:after {
   .gallery .galleryItem .featured {
     height: 30vh;
   }
+  .gallery figcaption {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.4) 47%, rgba(0, 0, 0, 0) 100%);
+  }
   .gallery figcaption h2 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+  }
+  .gallery figcaption h2 a {
+    padding: 0;
   }
 }
 @media only screen and (min-width: 601px) {
