@@ -23,17 +23,39 @@ var myChart = new Chart(ctx0, {
     "type":"line",
     "data": {
         "labels": dates,
-        "datasets":[
-            {
-            "label": sitename,
-            "data": values,
-            "fill": false,
-            "borderColor":"rgb(75,192,192)",
-            "lineTension":0.1
-            }
-        ]
-    },
+        "datasets":[{"label":sitename,
+        "data": values,
+        "fill":false,
+        "borderColor":"#79BED9",
+        "lineTension":0.1}]},
+        "options":{ 
+            responsive: false,
+            maintainAspectRatio: true,
+            title: {
+                display: true,
+                text:   sitename ,
+                fontSize : 18
+            },
+            scales: {
+                xAxes: [{
+                    type: 'time',
+                    time: {
+                            displayFormats: {
+                            day: 'MMM D'
+                        }
+                    }
+                }],
+
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+        labelString: "River Levels"
+                    
+                
+    }
+    }]
         }
+        }
+    }
 );
 }
-        
