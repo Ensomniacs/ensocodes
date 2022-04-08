@@ -39,7 +39,9 @@ var myChart = new Chart(ctx0, {
             legend: {
                 display: false
              },
-
+             tooltip: {
+                 display: false
+             },
             scales: {
                 xAxes: [{
                     type: 'time',
@@ -91,6 +93,9 @@ var myChart = new Chart(ctx1, {
             },
             legend: {
                 display: false
+             },
+             tooltip: {
+                 display: false
              },
             scales: {
                 xAxes: [{
@@ -145,6 +150,9 @@ var myChart = new Chart(ctx2, {
             legend: {
                 display: false
              },
+             tooltip: {
+                 display: false
+             },
             scales: {
                 xAxes: [{
                     type: 'time',
@@ -196,6 +204,9 @@ var myChart = new Chart(ctx1, {
             },
             legend: {
                 display: false
+             },
+             tooltip: {
+                 display: false
              },
             scales: {
                 xAxes: [{
