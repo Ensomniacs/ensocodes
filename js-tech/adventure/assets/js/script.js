@@ -63,6 +63,10 @@ var myChart = new Chart(ctx0, {
     }
 );
 
+
+var dates = [];
+var values = []; 
+
 var fLen = msg.value.timeSeries[1].values[0].value.length
 for (i = 0; i < fLen; i++) {
     values[i] = msg.value.timeSeries[1].values[0].value[i].value
@@ -118,6 +122,8 @@ var myChart = new Chart(ctx1, {
     }
 );
 
+var dates = [];
+var values = [];
 
 var fLen = msg.value.timeSeries[2].values[0].value.length
 for (i = 0; i < fLen; i++) {
@@ -173,6 +179,9 @@ var myChart = new Chart(ctx2, {
         }
     }
 );
+
+var dates = [];
+var values = [];
 
 var fLen = msg.value.timeSeries[3].values[0].value.length
 for (i = 0; i < fLen; i++) {
