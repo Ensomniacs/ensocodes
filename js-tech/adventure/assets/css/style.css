@@ -1,3 +1,12 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.cards .title {
+  font-size: 2.5rem;
+  color: #A6785D;
+}
+
 .formcontainer {
   width: 1000px;
   padding: 5px;
@@ -39,4 +48,8 @@ tr:nth-child(even) {
   content: "";
   clear: both;
   display: table;
+}
+
+span.req {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

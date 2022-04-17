@@ -1,3 +1,20 @@
+$navy: #0D4650;
+$blue: #12BDD1;
+$cream: #FFF7E9;
+$tan: #F2C894;
+$brown: #A6785D;
+$black: #090909;
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  & .title {
+    font-size: 2.5rem;
+    color: $brown;
+  }
+}
+
+
 .formcontainer {
     width: 1000px;
     padding: 5px;
@@ -39,4 +56,8 @@ tr:nth-child(even) {
   content: "";
   clear: both;
   display: table;
+}
+
+span.req{
+  display: none;
 }
