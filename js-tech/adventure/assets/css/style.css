@@ -1,3 +1,80 @@
+/* colors: 
+navy: #0D4650;
+blue: #12BDD1;
+cream: #FFF7E9;
+tan: #F2C894;
+brown: #A6785D;
+black: #090909;
+white: #fff; */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #0D4650;
+  background-color: #fff;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 400px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  height: 85px;
+  background-color: #FFF7E9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#brand {
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+#brand a {
+  color: #0D4650;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+  padding-top: 10px;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+a.svg {
+  position: relative;
+  display: inline-block;
+}
+a.svg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .cards {
   display: flex;
   justify-content: space-between;
@@ -5,37 +82,6 @@
 .cards .title {
   font-size: 2.5rem;
   color: #A6785D;
-}
-
-.formcontainer {
-  width: 1000px;
-  padding: 5px;
-}
-
-.formlabel {
-  display: inline-block;
-  width: 100px;
-  text-align: right;
-  padding: 5px;
-}
-
-.error {
-  color: red;
-  padding-left: 5px;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-  border: 1px solid black;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
 }
 
 .img-container {
@@ -50,6 +96,8 @@ tr:nth-child(even) {
   display: table;
 }
 
-span.req {
-  display: none;
-}/*# sourceMappingURL=style.css.map */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) *//*# sourceMappingURL=style.css.map */

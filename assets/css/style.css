@@ -199,15 +199,20 @@ body {
   margin: auto;
 }
 
+.contact {
+  background-color: white;
+  padding-top: 10vh;
+  margin: 0.3em;
+}
+
 .gallery {
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
   align-items: fill;
-  width: 100%;
-  margin: 0.3em;
+  width: 99.2vw;
   background-color: #090909;
-  padding-top: 15vh;
+  padding-top: 5vh;
 }
 .gallery .galleryItem {
   flex: 1 1 auto;
@@ -308,18 +313,18 @@ a.svg:after {
 }
 @media only screen and (max-width: 600px) {
   .gallery {
-    max-height: 30vh;
+    max-height: 25vh;
     margin: 0;
   }
   .gallery .galleryItem {
-    max-height: 30vh;
+    max-height: 20vh;
     width: 100vw;
     margin: 0;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .gallery .galleryItem .featured {
-    height: 30vh;
+    height: 20vh;
   }
   .gallery figcaption {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.4) 47%, rgba(0, 0, 0, 0) 100%);
@@ -335,10 +340,17 @@ a.svg:after {
   body {
     background-color: white;
   }
-
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   .gallery {
     background-color: white;
     margin: auto;
+  }
+  .gallery .galleryItem {
+    height: 20vh;
+  }
+  .gallery .galleryItem.featured {
+    height: 40vh;
   }
   .gallery figcaption {
     padding: 0.8rem;

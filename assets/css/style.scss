@@ -28,15 +28,21 @@ body {
     width: 100%;
     margin: auto;
 }
+
+.contact {
+    background-color: $white;
+    padding-top: 10vh;
+    margin: 0.3em;
+}
+
 .gallery {
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
     align-items: fill;
-    width: 100%;
-    margin: 0.3em;
+    width: 99.2vw;
     background-color: $black;
-    padding-top: 15vh;
+    padding-top: 5vh;
 
     .galleryItem {
         flex: 1 1 auto;
@@ -148,16 +154,16 @@ a.svg {
 }
 @media only screen and (max-width: 600px) {
     .gallery {
-        max-height: 30vh;
+        max-height: 25vh;
         margin: 0;
 
         .galleryItem {
-            max-height: 30vh;
+            max-height: 20vh;
             width: 100vw;
             margin: 0;
             object-fit: cover;
             & .featured {
-                height: 30vh;
+                height: 20vh;
             }
         }
         & figcaption {
@@ -182,9 +188,18 @@ a.svg {
     body {
         background-color: $white;
     }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
     .gallery {
         background-color: $white;
         margin: auto;
+        & .galleryItem {
+                height: 20vh;
+             &.featured {
+                height: 40vh;
+             }
+        }
         & figcaption {
         padding: 0.8rem;
         }
