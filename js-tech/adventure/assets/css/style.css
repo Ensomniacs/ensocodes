@@ -16,10 +16,41 @@ body {
   color: #0D4650;
   background-color: #fff;
   font-family: Calibri, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 .container {
   max-width: 400px;
+  margin: auto;
+}
+
+/* Base Font properties */
+h1 {
+  font-size: 2.5rem;
+  color: #0D4650;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #A6785D;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p {
+  font-weight: 1em;
 }
 
 header a {
@@ -52,8 +83,8 @@ header {
 }
 
 .logo {
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   padding-top: 10px;
 }
 
@@ -73,6 +104,10 @@ a.svg:after {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.directions {
+  display: none;
 }
 
 .cards {
@@ -97,6 +132,11 @@ a.svg:after {
 }
 
 /* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  .directions iframe {
+    display: none;
+  }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */

@@ -48,7 +48,7 @@ function calculate() {
             tounit =  document.getElementById("yards").value;
         }
         if (document.getElementById("feet").checked) {
-            fromunit = document.getElementById("feet").value;
+            tounit = document.getElementById("feet").value;
         }
         if (document.getElementById("miles").checked) {
             tounit =  document.getElementById("miles").value;
