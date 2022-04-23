@@ -22,11 +22,6 @@ body {
   justify-content: center;
 }
 
-.container {
-  max-width: 400px;
-  margin: auto;
-}
-
 /* Base Font properties */
 h1 {
   font-size: 2.5rem;
@@ -95,7 +90,7 @@ a {
   color: inherit;
 }
 
-nav .primary ul {
+.primary ul {
   list-style: none;
   height: 100%;
   display: flex;
@@ -103,13 +98,13 @@ nav .primary ul {
   justify-content: space-around;
   z-index: 3;
 }
-nav .primary ul a {
+.primary ul a {
   color: #0D4650;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.3rem;
 }
-nav .primary ul li {
+.primary ul li {
   padding: 30px 10px;
 }
 
@@ -210,7 +205,6 @@ nav .primary ul li {
 
 /* SVG & images */
 img {
-  max-width: 900px;
   width: 100%;
 }
 
@@ -291,11 +285,10 @@ a.svg:after {
 .cards {
   width: calc(100% - 2em);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 1em;
-  grid-template-areas: "a b e e" "c d e e";
+  margin: auto;
   width: 100%;
+  grid-gap: 1em;
+  grid-template-areas: "a" "b" "c" "d" "e";
 }
 
 .card {
@@ -378,12 +371,6 @@ a.svg:after {
   z-index: 5;
   font-size: 0.8em;
 }
-.card:nth-child(2) .card-label {
-  background: #12BDD1;
-}
-.card:nth-child(3) .card-label {
-  background: #F2C894;
-}
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
@@ -399,21 +386,12 @@ a.svg:after {
     display: none;
   }
 
-  /*flexbox index*/
-  .adv {
-    flex: 1 1 auto;
+  .masthead .mast-title {
+    padding: 4em 2em;
   }
 
-  .ex {
-    flex: 1 1 auto;
-  }
-
-  .wl {
-    flex: 1 1 auto;
-  }
-
-  .di {
-    flex: 1 1 auto;
+  .cards {
+    grid-template-columns: 1fr;
   }
 
   .directions iframe {
@@ -427,5 +405,21 @@ a.svg:after {
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+    grid-template-areas: "a a b b" "c c d d" "e e e e";
+  }
+}
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas: "a b e e" "c d e e";
+  }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) *//*# sourceMappingURL=style.css.map */
