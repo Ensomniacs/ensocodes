@@ -350,28 +350,23 @@
     -o-object-position: 100% 60%;
        object-position: 100% 60%;
   }
-
   .blue600 {
     height: 185px !important;
   }
-
   .reed-caption {
     margin-top: 5%;
   }
-
   .arripe-icon {
     margin-right: 10px;
     width: 40px;
     height: 40px;
   }
-
   .sub-line {
     display: flex;
     justify-content: space-between;
     width: 90%;
     flex-direction: column;
   }
-
   .credit {
     font-size: 12px;
     line-height: 16px;
@@ -379,7 +374,6 @@
     font-weight: 500;
     margin-right: auto;
   }
-
   .carousel__items {
     width: 100%;
     height: 300px;
@@ -416,7 +410,6 @@
     border: 1px solid #090909;
     display: none;
   }
-
   .img-350 {
     width: 320px;
     height: 320px;
@@ -429,28 +422,23 @@
     -o-object-position: 100% 60%;
        object-position: 100% 60%;
   }
-
   .blue600 {
     height: 303px !important;
   }
-
   .reed-caption {
     margin-top: -2%;
   }
-
   .arripe-icon {
     margin-right: 10px;
     width: 40px;
     height: 40px;
   }
-
   .sub-line {
     display: flex;
     justify-content: space-between;
     width: 90%;
     flex-direction: column;
   }
-
   .credit {
     font-size: 12px;
     line-height: 16px;
@@ -458,7 +446,6 @@
     font-weight: 500;
     margin-right: auto;
   }
-
   .carousel__items {
     margin: 0;
     padding: 0;
@@ -473,7 +460,6 @@
   .carousel__next > label {
     right: 0.9%;
   }
-
   .img-350 {
     width: 320px;
     height: 320px;
@@ -491,19 +477,16 @@
   .reed-caption {
     margin-top: -5%;
   }
-
   .arripe-icon {
     margin-right: 10px;
     width: 40px;
     height: 40px;
   }
-
   .sub-line {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-
   .credit {
     font-size: 12px;
     line-height: 16px;
@@ -511,7 +494,6 @@
     font-weight: 500;
     margin-left: auto;
   }
-
   .carousel {
     margin: 0 auto !important;
     width: 900px;
@@ -530,7 +512,6 @@
   .carousel__next > label {
     right: 0.9%;
   }
-
   .img-350 {
     width: 280px;
     height: 280px;
@@ -541,16 +522,13 @@
   .reed-caption {
     margin-top: -1%;
   }
-
   .title {
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
-
   .description, .credit {
     font-size: 1.1rem;
   }
-
   .carousel {
     margin: 0 auto !important;
     width: 1100px;
@@ -574,20 +552,16 @@
   .reed-caption {
     margin-top: -5%;
   }
-
   .title {
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
-
   .reed600 {
     height: 800px;
   }
-
   .description, .credit {
     font-size: 1.1rem;
   }
-
   .carousel {
     margin: 0 auto !important;
     width: 1400px !important;

@@ -449,19 +449,15 @@ footer iframe {
   nav.primary {
     display: none;
   }
-
   .masthead .mast-title {
     padding: 4em 2em;
   }
-
   .col-2 {
     display: none;
   }
-
   .cards {
     grid-template-columns: 1fr;
   }
-
   .directions iframe {
     display: none;
   }

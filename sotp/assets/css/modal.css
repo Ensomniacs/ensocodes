@@ -104,11 +104,9 @@
     margin: 0 10px;
     width: auto !important;
   }
-
   .modal {
     padding-top: 30px;
   }
-
   .mod-button {
     font-size: 2rem;
   }
@@ -118,7 +116,6 @@
     width: 33%;
     float: left;
   }
-
   .modal-img {
     height: 169px;
     -o-object-fit: cover;
@@ -129,7 +126,6 @@
   .modal-content {
     width: 500px;
   }
-
   .modal {
     padding-top: 50px;
   }

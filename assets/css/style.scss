@@ -40,22 +40,20 @@ body {
     flex-flow: row wrap;
     align-content: flex-start;
     align-items: fill;
-    width: 99.2vw;
+    width: 98vw;
     background-color: $black;
     padding-top: 5vh;
+    margin: auto;
 
     .galleryItem {
         flex: 1 1 auto;
         margin: auto;
         position: relative;
-        margin: 0.2em;
-        width: 45vw;
-        height: 30vh;
+        height: 60vh;
         overflow: hidden;
 
         &.featured {
-            width: 100vw;
-            height: 70vh;
+            height: 90vh;
         }
         &:hover img {
             filter: brightness(70%);
@@ -197,7 +195,7 @@ a.svg {
         & .galleryItem {
                 height: 20vh;
              &.featured {
-                height: 40vh;
+                height: 50vh;
              }
         }
         & figcaption {

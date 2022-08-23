@@ -133,21 +133,17 @@ ul a:hover {
   header nav {
     display: none;
   }
-
   #hamburger-icon {
     display: block;
   }
-
   header {
     background-color: transparent;
   }
-
   #brand {
     color: white;
     font-size: 1.5rem;
     z-index: 9999;
   }
-
   ul a {
     background-color: transparent;
     color: #97A6A0;

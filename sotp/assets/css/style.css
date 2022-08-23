@@ -351,28 +351,23 @@
     -o-object-position: 100% 60%;
        object-position: 100% 60%;
   }
-
   .blue600 {
     height: 185px !important;
   }
-
   .reed-caption {
     margin-top: 5%;
   }
-
   .arripe-icon {
     margin-right: 10px;
     width: 40px;
     height: 40px;
   }
-
   .sub-line {
     display: flex;
     justify-content: space-between;
     width: 90%;
     flex-direction: column;
   }
-
   .credit {
     font-size: 12px;
     line-height: 16px;
@@ -380,7 +375,6 @@
     font-weight: 500;
     margin-right: auto;
   }
-
   .carousel__items {
     width: 100%;
     height: 300px;
@@ -417,7 +411,6 @@
     border: 1px solid #090909;
     display: none;
   }
-
   .img-350 {
     width: 320px;
     height: 320px;
@@ -430,28 +423,23 @@
     -o-object-position: 100% 60%;
        object-position: 100% 60%;
   }
-
   .blue600 {
     height: 303px !important;
   }
-
   .reed-caption {
     margin-top: -2%;
   }
-
   .arripe-icon {
     margin-right: 10px;
     width: 40px;
     height: 40px;
   }
-
   .sub-line {
     display: flex;
     justify-content: space-between;
     width: 90%;
     flex-direction: column;
   }
-
   .credit {
     font-size: 12px;
     line-height: 16px;
@@ -459,7 +447,6 @@
     font-weight: 500;
     margin-right: auto;
   }
-
   .carousel__items {
     margin: 0;
     padding: 0;
@@ -474,7 +461,6 @@
   .carousel__next > label {
     right: 0.9%;
   }
-
   .img-350 {
     width: 320px;
     height: 320px;
@@ -492,19 +478,16 @@
   .reed-caption {
     margin-top: -5%;
   }
-
   .arripe-icon {
     margin-right: 10px;
     width: 40px;
     height: 40px;
   }
-
   .sub-line {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-
   .credit {
     font-size: 12px;
     line-height: 16px;
@@ -512,7 +495,6 @@
     font-weight: 500;
     margin-left: auto;
   }
-
   .carousel {
     margin: 0 auto !important;
     width: 900px;
@@ -531,7 +513,6 @@
   .carousel__next > label {
     right: 0.9%;
   }
-
   .img-350 {
     width: 280px;
     height: 280px;
@@ -542,16 +523,13 @@
   .reed-caption {
     margin-top: -1%;
   }
-
   .title {
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
-
   .description, .credit {
     font-size: 1.1rem;
   }
-
   .carousel {
     margin: 0 auto !important;
     width: 1100px;
@@ -575,20 +553,16 @@
   .reed-caption {
     margin-top: -5%;
   }
-
   .title {
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
-
   .reed600 {
     height: 800px;
   }
-
   .description, .credit {
     font-size: 1.1rem;
   }
-
   .carousel {
     margin: 0 auto !important;
     width: 1400px !important;
@@ -736,7 +710,6 @@ ul a:hover {
   header nav {
     display: none;
   }
-
   #hamburger-icon {
     display: block;
   }
@@ -863,11 +836,9 @@ ul a:hover {
     margin: 0 10px;
     width: auto !important;
   }
-
   .modal {
     padding-top: 30px;
   }
-
   .mod-button {
     font-size: 2rem;
   }
@@ -877,7 +848,6 @@ ul a:hover {
     width: 33%;
     float: left;
   }
-
   .modal-img {
     height: 169px;
     -o-object-fit: cover;
@@ -888,7 +858,6 @@ ul a:hover {
   .modal-content {
     width: 500px;
   }
-
   .modal {
     padding-top: 50px;
   }
@@ -1701,31 +1670,24 @@ button.close {
     margin: auto;
     padding-top: 1.5rem;
   }
-
   h1 {
     font-size: 2.7rem;
   }
-
   h2 {
     font-size: 1.95rem;
   }
-
   h3 {
     font-size: 1.85rem;
   }
-
   h4 {
     font-size: 1.75rem;
   }
-
   h5 {
     font-size: 1.5rem;
   }
-
   p {
     font-size: 0.95rem;
   }
-
   .consume-section {
     position: relative;
     width: 100%;
@@ -1738,7 +1700,6 @@ button.close {
     background-attachment: scroll;
     background-size: cover;
   }
-
   #consume .overlay {
     position: relative;
     width: 100%;
@@ -1751,12 +1712,10 @@ button.close {
     background-size: cover;
     padding: 100px 50px;
   }
-
   h2 {
     text-align: center;
     margin-bottom: -5px;
   }
-
   #replicate h2 {
     margin-top: 0;
   }
@@ -1768,28 +1727,23 @@ button.close {
     text-align: right;
     padding-top: 5px;
   }
-
   #consume h5 {
     font-size: 1.2rem;
   }
   #consume p {
     font-size: 1rem;
   }
-
   #infect h6 {
     font-size: 0.9rem;
     text-align: right;
   }
-
   .enhance-section {
     padding-bottom: 0 !important;
   }
-
   #enhanceh6 {
     font-size: 0.9rem;
     text-align: right;
   }
-
   div.answer {
     margin-bottom: 350px;
     max-height: 10vh;
@@ -1802,18 +1756,15 @@ button.close {
   .max-height {
     height: 100%;
   }
-
   iframe {
     width: 75% !important;
     height: 207px;
     margin: auto;
     padding-top: 1.5rem;
   }
-
   #story {
     width: 100%;
   }
-
   .consume-section {
     position: relative;
     width: 100%;
@@ -1826,7 +1777,6 @@ button.close {
     background-attachment: scroll;
     background-size: cover;
   }
-
   #consume .overlay {
     position: relative;
     width: 100%;
@@ -1839,7 +1789,6 @@ button.close {
     background-size: cover;
     padding: 100px 25px;
   }
-
   .infect-section h6 {
     text-align: right;
     padding: 0;
@@ -1849,12 +1798,10 @@ button.close {
     padding-top: 15px;
     padding-bottom: 25px;
   }
-
   #infect p {
     margin: auto;
     width: 90vw;
   }
-
   #replicate h2 {
     text-align: center;
     margin-top: 0;
@@ -1867,7 +1814,6 @@ button.close {
     text-align: right;
     font-size: 1rem;
   }
-
   #enhance h2 {
     text-align: center;
     margin-top: 0;
@@ -1878,39 +1824,30 @@ button.close {
     font-size: 0.8rem;
     padding-left: 5%;
   }
-
   .gallery-container {
     margin: auto;
   }
-
   h1 {
     font-size: 3rem;
   }
-
   h2 {
     font-size: 1.95rem;
   }
-
   h3 {
     font-size: 1.9rem;
   }
-
   h4 {
     font-size: 1.8rem;
   }
-
   h5 {
     font-size: 0.8rem;
   }
-
   h6 {
     font-size: 1.1rem;
   }
-
   p {
     font-size: 1.2rem;
   }
-
   div.answer {
     margin-bottom: 150px;
     max-height: 30vh;
@@ -1922,18 +1859,15 @@ button.close {
     width: 85vw;
     margin: auto;
   }
-
   p {
     font-size: 1.2rem;
   }
-
   #eliminate h2, #enhance h2 {
     text-align: center;
   }
   #eliminate h6, #enhance h6 {
     text-align: center;
   }
-
   #replicate h2 {
     margin-bottom: -5px;
     text-align: center;
@@ -1942,7 +1876,6 @@ button.close {
     text-align: right;
     line-height: 1.3;
   }
-
   #infect h2 {
     text-align: center;
   }
@@ -1950,18 +1883,15 @@ button.close {
     text-align: right;
     padding-right: 50px;
   }
-
   .max-height {
     height: 100%;
   }
-
   iframe {
     width: 75% !important;
     height: 205px;
     margin: auto;
     padding-top: 1.5rem;
   }
-
   div.answer {
     margin-bottom: 100px;
     max-height: 30vh;
@@ -1980,7 +1910,6 @@ button.close {
     text-align: right;
     font-size: 0.9rem;
   }
-
   #infect h2 {
     text-align: center;
   }
@@ -1988,24 +1917,19 @@ button.close {
     text-align: right;
     padding-right: 50px;
   }
-
   p {
     font-size: 1.2rem;
   }
-
   div.answer {
     margin-bottom: 60px;
     max-height: 30vh;
   }
-
   #story {
     width: 100%;
   }
-
   .max-height {
     height: 750px;
   }
-
   .max-height2 {
     height: 450px;
     justify-content: center;
@@ -2017,42 +1941,35 @@ button.close {
     flex-direction: column;
     justify-content: space-between;
   }
-
   .card-deck {
     display: flex;
     flex-flow: row wrap;
     margin: auto;
     width: 320px;
   }
-
   .card-deck .card {
     flex: 1 0 50%;
     margin-right: 0.75rem;
     margin-bottom: 0;
     margin-left: 0.75rem;
   }
-
   .cta {
     padding-top: 40%;
     width: 55vw;
     margin: auto;
     align-items: center;
   }
-
   .masthead2 {
     background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/agteam768.webp");
   }
-
   iframe {
     width: 65%;
     height: 205px;
   }
-
   div.answer {
     margin-bottom: 60px;
     max-height: 30vh;
   }
-
   #story {
     width: 100%;
   }
@@ -2065,36 +1982,29 @@ button.close {
     align-items: right;
     padding-right: 40px;
   }
-
   iframe {
     height: 207px;
     margin: auto;
     padding-top: 1.5rem;
   }
-
   div.answer {
     margin-bottom: 60px;
     max-height: 30vh;
   }
-
   #story {
     width: 100%;
   }
-
   .masthead h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
-
   .max-height {
     height: 800px;
   }
-
   .max-height2 {
     height: 450px;
     justify-content: center;
   }
-
   .masthead {
     position: relative;
     width: 100%;
@@ -2107,11 +2017,9 @@ button.close {
     background-attachment: scroll;
     background-size: cover;
   }
-
   .masthead2 {
     background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/agteam768.webp");
   }
-
   .masthead2 h2 {
     max-width: 20rem;
     font-size: 1.5rem;
@@ -2119,7 +2027,6 @@ button.close {
     font-weight: 700;
     text-align: center;
   }
-
   .about-section {
     position: relative;
     width: 100%;
@@ -2133,11 +2040,9 @@ button.close {
     background-size: cover;
     border-top: 7px solid rgba(255, 255, 255, 0.9);
   }
-
   .about-section p {
     margin-bottom: 5rem;
   }
-
   .consume-section {
     position: relative;
     width: 100%;
@@ -2149,7 +2054,6 @@ button.close {
     background-attachment: scroll;
     background-size: cover;
   }
-
   #replicate h4 {
     font-size: 0.8rem;
   }
@@ -2160,26 +2064,22 @@ button.close {
     flex-direction: column;
     justify-content: space-between;
   }
-
   .card-deck {
     display: flex;
     flex-flow: row wrap;
     margin-right: -0.75rem;
     margin-left: -0.75rem;
   }
-
   .card-deck .card {
     flex: 1 0 0%;
     margin-right: 0.75rem;
     margin-bottom: 0;
     margin-left: 0.75rem;
   }
-
   #featured {
     height: 450px !important;
     width: 100%;
   }
-
   #story {
     height: 225px;
   }
@@ -2230,7 +2130,6 @@ button.close {
     outline: none;
     border-bottom: 0.25rem solid #DE3E3E;
   }
-
   .masthead {
     height: 100% !important;
     position: relative;
@@ -2242,19 +2141,16 @@ button.close {
     background-attachment: scroll;
     background-size: contain;
   }
-
   .masthead h1 {
     font-size: 4.5rem;
     line-height: 4.5rem;
     letter-spacing: 0.8rem;
   }
-
   .masthead h2 {
     max-width: 75rem;
     font-size: 1.75rem;
     font-weight: 700;
   }
-
   .masthead2 {
     position: relative;
     width: 100%;
@@ -2267,11 +2163,9 @@ button.close {
     background-attachment: scroll;
     background-size: cover;
   }
-
   #about p {
     max-width: 900px;
   }
-
   .about-section {
     position: relative;
     width: 100%;
@@ -2285,38 +2179,32 @@ button.close {
     background-size: cover;
     border-top: 7px solid rgba(255, 255, 255, 0.9);
   }
-
   #replicate h4 {
     font-size: 0.8rem;
   }
-
   .card {
     margin-left: 1.5rem;
     flex-direction: column;
     justify-content: space-between;
   }
-
   .card-deck {
     display: flex;
     flex-flow: row wrap;
     margin-right: -0.75rem;
     margin-left: -0.75rem;
   }
-
   .card-deck .card {
     flex: 1 0 0%;
     margin-right: 0.75rem;
     margin-bottom: 0;
     margin-left: 0.75rem;
   }
-
   iframe {
     height: 277px;
     margin: auto;
     padding-top: 1.5rem;
     width: 50%;
   }
-
   #featured {
     height: 450px !important;
     width: 100%;
@@ -2327,7 +2215,6 @@ button.close {
     margin: 0 auto;
     max-width: 1100px;
   }
-
   .masthead {
     height: 100% !important;
     position: relative;
@@ -2339,7 +2226,6 @@ button.close {
     background-attachment: scroll;
     background-size: cover;
   }
-
   .about-section {
     position: relative;
     width: 100%;
@@ -2353,11 +2239,9 @@ button.close {
     background-size: cover;
     border-top: 7px solid rgba(255, 255, 255, 0.9);
   }
-
   body {
     letter-spacing: 0.0625em;
   }
-
   #mainNav {
     min-height: 3.5rem;
     background-color: #40000b;
@@ -2389,27 +2273,23 @@ button.close {
     background-color: #40000b;
     font-weight: 700;
   }
-
   .card {
     margin-left: 1.5rem;
     flex-direction: column;
     justify-content: space-between;
   }
-
   .card-deck {
     display: flex;
     flex-flow: row wrap;
     margin-right: -0.75rem;
     margin-left: -0.75rem;
   }
-
   .card-deck .card {
     flex: 1 0 0%;
     margin-right: 0.75rem;
     margin-bottom: 0;
     margin-left: 0.75rem;
   }
-
   .nav {
     display: flex;
     flex-wrap: wrap;
@@ -2417,59 +2297,47 @@ button.close {
     margin-bottom: 0;
     list-style: none;
   }
-
   .nav-link {
     display: block;
     padding: 0.5rem 1rem;
   }
-
   .nav-link:hover, .nav-link:focus {
     text-decoration: none;
   }
-
   .cta {
     width: 45vw;
     max-width: 700px;
     padding-right: inherit;
     margin-left: 50%;
   }
-
   #story {
     height: 450px;
   }
-
   .modal-img {
     height: 192px;
   }
-
   h6 {
     font-size: 1.8rem;
   }
-
   h5 {
     font-size: 1.9rem;
   }
-
   p {
     font-size: 1.4rem;
   }
-
   #replicate h6 {
     font-size: 1.8rem;
   }
   #replicate h4 {
     font-size: 1.4rem;
   }
-
   .img-350 {
     width: 350px;
     height: 350px;
   }
-
   iframe {
     height: 320px;
   }
-
   #featured {
     height: 620px;
   }
@@ -2538,32 +2406,25 @@ button.close {
     width: 80vw;
     max-width: 1400px;
   }
-
   .masthead {
     padding: 15rem 0;
   }
-
   .cta {
     width: 30vw;
     margin-right: 150px;
   }
-
   #story {
     height: 450px;
   }
-
   #consume.overlay {
     padding: 105px;
   }
-
   h5 {
     font-size: 1.9rem;
   }
-
   iframe {
     height: 390px;
   }
-
   #featured {
     height: 633px;
   }

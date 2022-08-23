@@ -242,11 +242,9 @@ aside[role=complementary] article:last-child {
     flex-direction: column;
     justify-content: space-between;
   }
-
   header.primary nav li {
     margin-bottom: 15px;
   }
-
   header.primary a {
     display: block;
   }

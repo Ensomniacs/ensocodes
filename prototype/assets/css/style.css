@@ -162,7 +162,6 @@ h4 {
     -webkit-clip-path: inset(5em);
             clip-path: inset(5em);
   }
-
   .drop-shadow:before {
     top: 5em;
     width: calc(100% - 10em);
