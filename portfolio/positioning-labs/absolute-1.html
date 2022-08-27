@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Positioning Lab</title>
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+<style>
+  #wrapper > div {
+    width: 150px;
+    height: 150px;
+  }
+#red {
+	position: absolute;
+  top: 0;
+  left: 0;
+}
+#green {
+	position: absolute;
+  top: 0;
+  right: 0;
+}
+#blue {
+	position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#purple {
+	position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#footer {
+	left: 50%;
+  top: 50%;
+  margin: 20px auto;
+}
+</style>
+</head>
+
+<body>
+<h1>Absolute 1</h1>
+<div id="wrapper">
+  <div id="red">Red</div>
+  <div id="green">Green</div>
+  <div id="blue">Blue</div>
+  <div id="purple">Purple</div>
+  <div id="footer">Footer</div>
+</div>
+</body>
+</html>

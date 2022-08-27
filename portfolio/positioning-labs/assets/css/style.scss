@@ -1,0 +1,53 @@
+$background:#ececec;
+$white: #fff;
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: $background;
+	font-weight: bold;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: $white;
+	text-align: center;
+	line-height: 24px;
+}
+#wrapper {
+	background-color: $white;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+a {
+	color: $white;
+}
+#red {
+	background-color: #900;
+}
+#green {
+	background-color: #090;
+}
+#blue {
+	background-color: #00F;
+}
+#purple {
+	background-color: #63C;
+}
+#footer {
+	background-color: #666;
+}
+h1 {
+	color: #000;
+	font-weight: normal;
+	padding: 50px;
+}
