@@ -18,15 +18,15 @@
     /* color-1(#eabe7c)
      * color-2(#23967f)
      */
-    --color-1 : hsla(36, 72%, 70%, 1);
+    --color-1 : #66D98E;
     --color-2 : hsla(168, 62%, 36%, 1);
 
     /* theme color variations
      */
-    --color-1-lighter : hsla(36, 72%, 90%, 1);
-    --color-1-light   : hsla(36, 72%, 80%, 1);
-    --color-1-dark    : hsla(36, 72%, 60%, 1);
-    --color-1-darker  : hsla(36, 72%, 50%, 1);
+    --color-1-lighter : #a9dcbb;
+    --color-1-light   : #85dca3;
+    --color-1-dark    : #44d878;
+    --color-1-darker  : #12bd4e;
     --color-2-lighter : hsla(168, 62%, 56%, 1);
     --color-2-light   : hsla(168, 62%, 46%, 1);
     --color-2-dark    : hsla(168, 62%, 26%, 1);
