@@ -6,7 +6,7 @@ body, html {
 }
 
 body {
-  background-image: url("https://ensomniacs.github.io/it-topaz/course/prototype/assets/img/emissary.jpeg");
+  background-image: url("https://enso.codes/portfolio/courses/prototype/assets/img/emissary.jpeg");
   background-size: cover;
   background-position: center;
   font-family: "Zen Kaku Gothic Antique", sans-serif;
@@ -29,7 +29,7 @@ h1 {
 /*Dust is container*/
 .dust {
   position: relative;
-  background-image: url("https://ensomniacs.github.io/it-topaz/course/prototype/assets/img/emissary.jpeg");
+  background-image: url("https://enso.codes/portfolio/courses/prototype/assets/img/emissary.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
