@@ -3538,6 +3538,9 @@ img.u-pull-left {
     overflow-y       : auto;
     position         : relative;
 }
+.modal-popup p {
+    margin-bottom : var(--vspace-0_25);
+}
 
 .modal-popup img {
     margin-bottom : var(--vspace-0_75);
@@ -3561,7 +3564,7 @@ img.u-pull-left {
     list-style   : none;
     margin-left  : 0;
     font-size    : var(--text-sm);
-    line-height  : var(--vspace-0_5);
+    line-height  : var(--vspace-0_125);
     color        : rgba(0, 0, 0, 0.6);
     padding-left : calc(0.875 * var(--space));
     position     : relative;
