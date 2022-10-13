@@ -3434,7 +3434,7 @@ img.u-pull-left {
     z-index          : 1;
     content          : "";
     display          : block;
-    background-color : rgba(255, 255, 255, 0.75);
+    background-color : rgba(18,19,20, 0.45);
     position         : absolute;
     top              : 0;
     left             : 0;
@@ -3453,7 +3453,7 @@ img.u-pull-left {
     font-family : var(--font-1);
     font-weight : 300;
     font-size   : 2.2rem;
-    color       : black;
+    color       : white;
     text-align  : center;
     height      : var(--vspace-1);
     width       : var(--vspace-1);
