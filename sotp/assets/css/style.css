@@ -639,10 +639,6 @@ ul a:hover {
 
 .primary li {
   padding: 30px 10px;
-  border-bottom: 2px solid #40000b;
-}
-.primary li:hover {
-  border-bottom: 2px solid #f60000;
 }
 
 #hamburger-icon {
