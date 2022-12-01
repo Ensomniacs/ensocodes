@@ -6,64 +6,130 @@
     <meta name="description" content="JavaScript Calculator">
     <meta name="keywords" content="JavaSCript, HTML, CSS">
     <meta name="author" content="Eli Brewer">
-    <meta property="og:site_name" content="Enso | Portfolio">
-    <meta property="og:title" content="Enso | JavaScript Calculator">
+    <meta property="og:site_name" content="JavaScript Calculator">
+    <meta property="og:title" content="JavaScript Calculator">
     <meta property="og:url" content="https://enso.codes/calculator">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/portfolio/courses/assets/css/style.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+    <script src="/portfolio/courses/assets/js/menu.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        const storedTheme = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        if (storedTheme) document.documentElement.setAttribute("data-theme", storedTheme); 
+    </script>
 </head>
 
 <body>
-    <form id="myform">
-        <div class="formcontainer" onsubmit="returnfalse">
-        <h1>JavaScript Calculator</h1>
-        <fieldset id="detail">
-            <legend>Calculator</legend>
-
-            <label class="formlabel" for="Operand1">Operand 1:</label>
-            <input type="text" id="Operand1" name="Operand1" size="15" maxlength="15"
-                data-rule-required="true" data-msg-required="Operand 1 is Required"
-                data-rule-number="true" data-msg-number="Operand 1 must be a Number">
-            <label class="error" for="Operand1" id="Operand1Error"></label>
-                <br><br>
-
-                <label class="formlabel">Operator: </label>
-                <label for="AddOperator">
-                <input type="radio" name="Operator" id="AddOperator" value="Add"
-                    data-rule-required="true" data-msg-required="Operator is Required" />+
-                </label>
-                <label for="SubOperator">
-                <input type="radio" name="Operator" id="SubOperator" value="Subtract">-
-                </label>
-                 <label for="MultiplyOperator">
-                    <input type="radio" name="Operator" id="MultiplyOperator" value="Multiply">*
-                </label>
-                <label for="DivideOperator">
-                    <input type="radio" name="Operator" id="DivideOperator" value="Divide">/
-                </label>
-                <label for="Operator" class="error" id="OperatorError"></label>
-                    <br><br>
-
-            <label class="formlabel" for="Operand2">Operand 2: </label>
-            <input type="text" id="Operand2" name="Operand2" size="15" maxlength="15"       
-                data-rule-required="true"  data-msg-required="Operand 2 is Required" 
-                data-rule-number="true" data-msg-number="Operand 2 must be a Number">
-            <label class="error" for="Operand2" id="Operand2Error"></label>
-                <br><br>
+    <div class="wrapper">
+        <header class="index" id="header">
+            <div class="logo"><a href="/" class="active">Enso.codes</a></div>
+            <div class="darkmode">
+                <button class="theme-toggle" aria-label="dark/light mode" type="button">
+                    <span class="toggle"></span>
+                </button>
+             </div>
+        </header>
+        <main class="view" id="index">
+            <div class="wrapper">
+                <div class="highlight">
+                    <div class="text">
+                        <form id="myform">
+                            <div class="formcontainer" onsubmit="returnfalse">
+                            <h1>JavaScript Calculator</h1>
+                            <fieldset id="detail">
+                                <legend>Calculator</legend>
+                    
+                                <label class="formlabel" for="Operand1">Operand 1:</label>
+                                <input type="text" id="Operand1" name="Operand1" size="15" maxlength="15"
+                                    data-rule-required="true" data-msg-required="Operand 1 is Required"
+                                    data-rule-number="true" data-msg-number="Operand 1 must be a Number">
+                                <label class="error" for="Operand1" id="Operand1Error"></label>
+                                    <br><br>
+                    
+                                    <label class="formlabel">Operator: </label>
+                                    <label for="AddOperator">
+                                    <input type="radio" name="Operator" id="AddOperator" value="Add"
+                                        data-rule-required="true" data-msg-required="Operator is Required" />+
+                                    </label>
+                                    <label for="SubOperator">
+                                    <input type="radio" name="Operator" id="SubOperator" value="Subtract">-
+                                    </label>
+                                     <label for="MultiplyOperator">
+                                        <input type="radio" name="Operator" id="MultiplyOperator" value="Multiply">*
+                                    </label>
+                                    <label for="DivideOperator">
+                                        <input type="radio" name="Operator" id="DivideOperator" value="Divide">/
+                                    </label>
+                                    <label for="Operator" class="error" id="OperatorError"></label>
+                                        <br><br>
+                    
+                                <label class="formlabel" for="Operand2">Operand 2: </label>
+                                <input type="text" id="Operand2" name="Operand2" size="15" maxlength="15"       
+                                    data-rule-required="true"  data-msg-required="Operand 2 is Required" 
+                                    data-rule-number="true" data-msg-number="Operand 2 must be a Number">
+                                <label class="error" for="Operand2" id="Operand2Error"></label>
+                                    <br><br>
+                        
+                                <label class="formlabel">Result: </label>
+                                <span id="Result"></span>
+                                    <br><br>
+                        
+                                <input type="button" value="Calculate" name="Calculate" onclick="calculate();" class="bttn">
+                                <input type="button" value="Clear" name="Clear" onclick="clearform();" class="bttn" novalidate>    
+                            </fieldset>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
     
-            <label class="formlabel">Result: </label>
-            <span id="Result"></span>
-                <br><br>
+        <footer id="index">
+            <ul class="grid-5">
+                <li>
+                    <div class="name"><h3>Reach me at</h3></div>
+                    <div class="description"><a href="mailto:enso@enso.codes">enso@enso.codes</a></div>
+                </li>
+                <li>
+                    <div class="name"><h3>Social</h3></div>
+                    <div class="description"><a href="https://linkedin.com/in/eli-brewer"><i class="social" icon-name="linkedin"></i></a> <a href="https://github.com/ensomniacs"><i class="social" icon-name="github"></i></a> <a href="https://instagram.com/ensocodes"><i class="social" icon-name="instragram"></i></a> <a href="https://twitch.tv/ensomniacs" class="tw"><i class="social" icon-name="twitch"></i></a> <a href="https://linktr.ee/ensomniacs" class="lt"><i class="social" icon-name="tree-pine"></i></a></div>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+        const btns = document.querySelectorAll(".theme-toggle");
+        btns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+            let currentTheme = document.documentElement.getAttribute("data-theme");
+            let targetTheme = "light";
     
-            <input type="button" value="Calculate" name="Calculate" onclick="calculate();">
-            <input type="button" value="Clear" name="Clear" onclick="clearform();" novalidate>    
-        </fieldset>
-        </div>
-    </form>
-    <script src="assets/js/script.js"></script>
+            if (currentTheme === "light") {
+                targetTheme = "dark";
+            }
+    
+            document.documentElement.setAttribute("data-theme", targetTheme);
+            localStorage.setItem("theme", targetTheme);
+        });
+    });
+        </script>
+    <!-- ICONS: phosphor --><script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- ICONS: Lucide --><script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        tippy('.theme-toggle', {
+            content: 'Dark/Light Mode',
+        placement: 'bottom',
+        animation: 'shift-toward-subtle',
+        theme: 'translucent',},
+        );
+    
+        lucide.createIcons();
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HREH7LKY0V"></script>
 <script>

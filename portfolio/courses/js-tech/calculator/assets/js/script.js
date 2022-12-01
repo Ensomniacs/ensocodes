@@ -34,7 +34,7 @@ function calculate() {
         }
  
         /* if the operator was "Sub" */
-        if (operator == "Sub") {
+        if (operator == "Subtract") {
             result = (operand1 - operand2fp);
         }
         /* if the operator was "Multiply" */
