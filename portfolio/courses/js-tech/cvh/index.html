@@ -33,7 +33,7 @@
                   <div class="text">
     <form id="myform">
         <div class="formcontainer">
-            <h2>Currency Value History</h2>
+            <h1>Currency Value History</h1>
             <label for="BaseCurrency" class="formlabel">Base Currency:</label>
             <select id="BaseCurrency" name="BaseCurrency"
                 data-rule-required="true" data-msg-required="Value is Required">
@@ -74,17 +74,12 @@
             
             <div class="clearfix">
                 <div class="img-container">
-                    <h2 id="title"></h2>
-                    <canvas id="chartjs-0" width="400" height="400"></canvas>
+                    <h1 id="title"></h1>
+                    <canvas id="chartjs-0"></canvas>
                 </div>
             </div>
         </div>
     </form>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <script src="assets/js/script.js"></script>
     </div>
 </div>
 </div>
@@ -98,11 +93,16 @@
 </li>
 <li>
     <div class="name"><h3>Social</h3></div>
-    <div class="description"><a href="https://linkedin.com/in/eli-brewer"><i class="social" icon-name="linkedin"></i></a> <a href="https://github.com/ensomniacs"><i class="social" icon-name="github"></i></a> <a href="https://instagram.com/ensocodes"><i class="social" icon-name="instragram"></i></a> <a href="https://twitch.tv/ensomniacs" class="tw"><i class="social" icon-name="twitch"></i></a> <a href="https://linktr.ee/ensomniacs" class="lt"><i class="social" icon-name="tree-pine"></i></a></div>
+    <div class="description"><a href="https://linkedin.com/in/eli-brewer"><i class="social" icon-name="linkedin"></i></a> <a href="https://github.com/ensomniacs"><i class="social" icon-name="github"></i></a> <a href="https://instagram.com/ensocodes"><i class="social" icon-name="instagram"></i></a> <a href="https://twitch.tv/ensomniacs" class="tw"><i class="social" icon-name="twitch"></i></a> <a href="https://linktr.ee/ensomniacs" class="lt"><i class="social" icon-name="tree-pine"></i></a></div>
 </li>
 </ul>
 </footer>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="assets/js/script.js"></script>
 <script>
 const btns = document.querySelectorAll(".theme-toggle");
 btns.forEach((btn) => {

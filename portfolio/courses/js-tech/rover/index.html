@@ -9,30 +9,29 @@
   <meta property="og:title" content="IT Topaz Currency Converter">
   <meta property="og:url" content="https://enso.codes/">
   <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/portfolio/courses/assets/css/style.css" type="text/css">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-  <link rel="stylesheet" href="https://ensomniacs.github.io/it-topaz/assets/css/topaz.css">
-  </head>
-
+  <script src="assets/js/script.js"></script>
+  <script>
+      const storedTheme = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      if (storedTheme) document.documentElement.setAttribute("data-theme", storedTheme); 
+  </script>
+</head>
 
 <body>
-    
-<header class="masthead" id="home">
-    <h2 class="mast-heading">Ensomniacs</h2>
-    <p class="mast-intro">UI/UX Generalist</p>
- </header>
- 
- <nav>
-   <ul>
-     <li><a href="https://enso.codes/">Home</a></li>
-     <li><a href="https://enso.codes/ittopaz.html">Go Back</a></li>
-   </ul>
- </nav>
- 
- <section class="section sectionbanner">
-   <div class="container" id="about">
-     <div class="about">
-       <div class="point1">
-
+  <div class="wrapper">
+      <header class="index" id="header">
+          <div class="logo"><a href="/" class="active">Enso.codes</a></div>
+          <div class="darkmode">
+              <button class="theme-toggle" aria-label="dark/light mode" type="button">
+                  <span class="toggle"></span>
+              </button>
+           </div>
+      </header>
+      <main class="view" id="index">
+          <div class="wrapper">
+              <div class="highlight">
+                  <div class="text">
     <form id="myform">
         <div class="formcontainer">
             <h1>Mars Rover Photo Explorer</h1>
@@ -61,8 +60,8 @@
                 <label class="error" for="PictureDate" id="PictureDateError"></label>
                 <br><br>
     
-                <input type="button" value="Search" name="Search" onclick="findrover();">
-                <input type="button" value="Clear" name="Clear" onclick="clearform();" novalidate="">
+                <input type="button" value="Search" name="Search" onclick="findrover();" class="bttn">
+                <input type="button" value="Clear" name="Clear" onclick="clearform();" novalidate="" class="bttn">
                 <p id="text1"></p>
                 <p id="text2"></p>
         <div>
@@ -94,14 +93,66 @@
         </div>    
     </div>
     </form>
-    </div>
-    </div>
-    </div>
-</section>
+  </div>
+</div>
+</div>
+</main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-    <script src="assets/js/script.js"></script>
+<footer id="index">
+<ul class="grid-5">
+<li>
+    <div class="name"><h3>Reach me at</h3></div>
+    <div class="description"><a href="mailto:enso@enso.codes">enso@enso.codes</a></div>
+</li>
+<li>
+    <div class="name"><h3>Social</h3></div>
+    <div class="description"><a href="https://linkedin.com/in/eli-brewer"><i class="social" icon-name="linkedin"></i></a> <a href="https://github.com/ensomniacs"><i class="social" icon-name="github"></i></a> <a href="https://instagram.com/ensocodes"><i class="social" icon-name="instagram"></i></a> <a href="https://twitch.tv/ensomniacs" class="tw"><i class="social" icon-name="twitch"></i></a> <a href="https://linktr.ee/ensomniacs" class="lt"><i class="social" icon-name="tree-pine"></i></a></div>
+</li>
+</ul>
+</footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script>
+const btns = document.querySelectorAll(".theme-toggle");
+btns.forEach((btn) => {
+btn.addEventListener("click", function () {
+let currentTheme = document.documentElement.getAttribute("data-theme");
+let targetTheme = "light";
+
+if (currentTheme === "light") {
+targetTheme = "dark";
+}
+
+document.documentElement.setAttribute("data-theme", targetTheme);
+localStorage.setItem("theme", targetTheme);
+});
+});
+</script>
+<!-- ICONS: phosphor --><script src="https://unpkg.com/phosphor-icons"></script>
+<!-- ICONS: Lucide --><script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+tippy('.theme-toggle', {
+content: 'Dark/Light Mode',
+placement: 'bottom',
+animation: 'shift-toward-subtle',
+theme: 'translucent',},
+);
+
+lucide.createIcons();
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HREH7LKY0V"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-HREH7LKY0V');
+</script>
 </body>
 </html>

@@ -678,4 +678,9 @@ h1 {
 .error {
   color: red;
   padding-left: 5px;
+}
+
+canvas {
+  width: 40vw;
+  height: 40vh;
 }/*# sourceMappingURL=style.css.map */
