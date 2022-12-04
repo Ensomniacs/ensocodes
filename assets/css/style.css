@@ -3204,6 +3204,13 @@ img.u-pull-left {
     margin-left : -4rem;
 }
 
+@supports (-moz-appearance:none) {
+    .about-info__text {
+        padding     : var(--vspace-3_5) 10vw var(--vspace-2) 0;
+        margin-left : 4rem;
+    }
+}
+
 .about-info__text .text-pretitle {
     margin-bottom : var(--vspace-1);
 }
