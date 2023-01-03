@@ -19,7 +19,7 @@
      * color-2(#23967f)
      */
     --color-1 : #e1989e;
-    --color-2 : hsla(168, 62%, 36%, 1);
+    --color-2 : rgba(172, 82, 137, 0.842);
 
     /* theme color variations
      */
