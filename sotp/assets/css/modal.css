@@ -48,17 +48,7 @@
 }
 
 .animate-zoom {
-  -webkit-animation: animatezoom 0.6s;
-          animation: animatezoom 0.6s;
-}
-
-@-webkit-keyframes animatezoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
+  animation: animatezoom 0.6s;
 }
 
 @keyframes animatezoom {

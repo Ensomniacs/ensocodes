@@ -697,7 +697,6 @@ ul a:hover {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -776,17 +775,7 @@ ul a:hover {
 }
 
 .animate-zoom {
-  -webkit-animation: animatezoom 0.6s;
-          animation: animatezoom 0.6s;
-}
-
-@-webkit-keyframes animatezoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
+  animation: animatezoom 0.6s;
 }
 
 @keyframes animatezoom {
@@ -1164,7 +1153,6 @@ hr {
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
@@ -1501,7 +1489,7 @@ h6 {
   height: auto;
   min-height: 45rem;
   padding: 15rem 0;
-  background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/gallery/Sotp-MastMobile.jpg");
+  background-image: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/gallery/Sotp-MastMobile.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -1514,7 +1502,7 @@ h6 {
   height: 350px;
   min-height: 45rem;
   padding: 15rem 0;
-  background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/agteam375.webp");
+  background-image: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/agteam375.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -1527,7 +1515,7 @@ h6 {
   height: auto;
   min-height: 25rem;
   padding: 13rem 0 5rem 0;
-  background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/gallery/Aksis132Mobile.webp");
+  background-image: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/gallery/Aksis132Mobile.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -1554,7 +1542,7 @@ h6 {
   height: auto;
   min-height: 25rem;
   padding: 15rem 0;
-  background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/gallery/consume1.webp");
+  background-image: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/gallery/consume1.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -1566,7 +1554,7 @@ h6 {
   width: 100%;
   height: auto;
   min-height: 25rem;
-  background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/gallery/consume2.webp");
+  background-image: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/gallery/consume2.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -1690,7 +1678,7 @@ button.close {
     height: auto;
     min-height: 25rem;
     padding: 15rem 0;
-    background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/gallery/consume1.webp");
+    background-image: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/gallery/consume1.webp");
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -1701,7 +1689,7 @@ button.close {
     width: 100%;
     height: auto;
     min-height: 25rem;
-    background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/gallery/consume2.webp");
+    background-image: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/gallery/consume2.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -1767,7 +1755,7 @@ button.close {
     height: auto;
     min-height: 25rem;
     padding: 15rem 0;
-    background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/gallery/consume1.webp");
+    background-image: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/gallery/consume1.webp");
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -1778,7 +1766,7 @@ button.close {
     width: 100%;
     height: auto;
     min-height: 25rem;
-    background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/gallery/consume2.webp");
+    background-image: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/gallery/consume2.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -1956,7 +1944,7 @@ button.close {
     align-items: center;
   }
   .masthead2 {
-    background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/agteam768.webp");
+    background-image: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/agteam768.webp");
   }
   iframe {
     width: 65%;
@@ -2007,14 +1995,14 @@ button.close {
     height: auto;
     min-height: 35rem;
     padding: 15rem 0;
-    background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/gallery/SotP-Masthead.jpg");
+    background-image: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/gallery/SotP-Masthead.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
   }
   .masthead2 {
-    background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/agteam768.webp");
+    background-image: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/agteam768.webp");
   }
   .masthead2 h2 {
     max-width: 20rem;
@@ -2029,7 +2017,7 @@ button.close {
     height: auto;
     min-height: 45rem;
     padding: 15rem 0;
-    background: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/gallery/Aksis132.webp");
+    background: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/gallery/Aksis132.webp");
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -2131,7 +2119,7 @@ button.close {
     position: relative;
     min-height: 25rem;
     padding: 15rem 0;
-    background: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/gallery/SotP-Masthead.jpg");
+    background: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/gallery/SotP-Masthead.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -2153,7 +2141,7 @@ button.close {
     height: 350px;
     min-height: 45rem;
     padding: 15rem 0;
-    background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/AGTeam1.webp");
+    background-image: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/AGTeam1.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -2168,7 +2156,7 @@ button.close {
     height: auto;
     min-height: 45rem;
     padding: 15rem 0;
-    background: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/gallery/Aksis132.webp");
+    background: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/gallery/Aksis132.webp");
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -2216,7 +2204,7 @@ button.close {
     position: relative;
     min-height: 45rem;
     padding: 15rem 0;
-    background: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/gallery/SotP-Masthead.jpg");
+    background: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/gallery/SotP-Masthead.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -2228,7 +2216,7 @@ button.close {
     height: auto;
     min-height: 45rem;
     padding: 15rem 0;
-    background: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/gallery/Aksis132.webp");
+    background: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/gallery/Aksis132.webp");
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -2382,7 +2370,7 @@ button.close {
   height: 350px;
   min-height: 20rem;
   padding: 15rem 0;
-  background-image: url("https://ensomniacs.github.io/it-topaz/sotp/assets/img/AGTeam1.webp");
+  background-image: url("https://ensomniacs.github.io/ensocodes/sotp/assets/img/AGTeam1.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
