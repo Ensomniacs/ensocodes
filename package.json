@@ -1,7 +1,7 @@
 {
     "name": "enso.codes",
     "version": "1.0.0",
-    "description": "IT Topaz portfolio review",
+    "description": "Selected Academic Works by Eli Brewer",
     "private": "true",
     "main": "assets/js/main.js"
 }
